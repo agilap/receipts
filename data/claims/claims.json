@@ -1,0 +1,317 @@
+[
+  {
+    "claim": "Diwa Tech leads engineering for Mulat, an AI driven burnout-risk forecasting engine using behavioral simulation to predict student outcomes weeks ahead",
+    "type": "soft",
+    "source_bullet": "Lead engineering for Mulat, an AI driven burnout-risk forecasting engine using behavioral simulation to predict student outcomes weeks ahead; selected into a competitive startup incubation cohort for funding."
+  },
+  {
+    "claim": "Diwa Tech is selected into a competitive startup incubation cohort for funding",
+    "type": "soft",
+    "source_bullet": "Lead engineering for Mulat, an AI driven burnout-risk forecasting engine using behavioral simulation to predict student outcomes weeks ahead; selected into a competitive startup incubation cohort for funding."
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product on FastAPI",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product on React",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product on TypeScript",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product with Supabase",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product with pgvector",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product with local Ollama inference",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech containerized the product via Docker Compose for reproducible, environment-portable deployment",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment."
+  },
+  {
+    "claim": "Diwa Tech engineered the core simulation engine on validated behavioral-science models",
+    "type": "tech",
+    "source_bullet": "Engineered the core simulation engine on validated behavioral-science models to deliver deterministic, interpretable outputs instead of opaque LLM generation."
+  },
+  {
+    "claim": "Diwa Tech delivers deterministic, interpretable outputs instead of opaque LLM generation",
+    "type": "soft",
+    "source_bullet": "Engineered the core simulation engine on validated behavioral-science models to deliver deterministic, interpretable outputs instead of opaque LLM generation."
+  },
+  {
+    "claim": "Metawatt built an LLM-powered underwriting-automation workflow for an enterprise client",
+    "type": "soft",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow."
+  },
+  {
+    "claim": "Metawatt designed multi-step decision logic for the underwriting-automation workflow",
+    "type": "soft",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow."
+  },
+  {
+    "claim": "Metawatt integrated external REST APIs in the underwriting-automation workflow",
+    "type": "tech",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow."
+  },
+  {
+    "claim": "Metawatt shipped a production-ready prototype across the full build cycle automating 10% of underwriting workflow",
+    "type": "quantitative",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow."
+  },
+  {
+    "claim": "Metawatt implemented an n8n orchestration pipeline and AI agents with slash-command controls",
+    "type": "tech",
+    "source_bullet": "Implemented an n8n orchestration pipeline and AI agents with slash-command controls, giving non-technical operators real-time control and monitoring of the underwriting flow and translating a complex AI backend into a simple operator interface."
+  },
+  {
+    "claim": "Metawatt gave non-technical operators real-time control and monitoring of the underwriting flow",
+    "type": "soft",
+    "source_bullet": "Implemented an n8n orchestration pipeline and AI agents with slash-command controls, giving non-technical operators real-time control and monitoring of the underwriting flow and translating a complex AI backend into a simple operator interface."
+  },
+  {
+    "claim": "Metawatt translated a complex AI backend into a simple operator interface",
+    "type": "soft",
+    "source_bullet": "Implemented an n8n orchestration pipeline and AI agents with slash-command controls, giving non-technical operators real-time control and monitoring of the underwriting flow and translating a complex AI backend into a simple operator interface."
+  },
+  {
+    "claim": "Metawatt led a 3-person team delivering end-to-end data-enrichment automation",
+    "type": "soft",
+    "source_bullet": "Led a 3-person team delivering end-to-end data-enrichment automation: integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs, with validation at each stage."
+  },
+  {
+    "claim": "Metawatt integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs",
+    "type": "tech",
+    "source_bullet": "Led a 3-person team delivering end-to-end data-enrichment automation: integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs, with validation at each stage."
+  },
+  {
+    "claim": "Metawatt validated data at each stage of the data-enrichment automation",
+    "type": "soft",
+    "source_bullet": "Led a 3-person team delivering end-to-end data-enrichment automation: integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs, with validation at each stage."
+  },
+  {
+    "claim": "Metawatt authored operator handoff documentation enabling non-technical staff to maintain the system independently",
+    "type": "soft",
+    "source_bullet": "Authored operator handoff documentation enabling non-technical staff to maintain the system independently, and operated across the full Software Development Life Cycle (SDLC) in a remote Agile environment sprint planning."
+  },
+  {
+    "claim": "Metawatt operated across the full Software Development Life Cycle (SDLC) in a remote Agile environment sprint planning",
+    "type": "soft",
+    "source_bullet": "Authored operator handoff documentation enabling non-technical staff to maintain the system independently, and operated across the full Software Development Life Cycle (SDLC) in a remote Agile environment sprint planning."
+  },
+  {
+    "claim": "Action Center built backend infrastructure for a regional hazard- and risk-assessment platform",
+    "type": "soft",
+    "source_bullet": "Built backend infrastructure for a regional hazard- and risk-assessment platform: designed ETL pipelines to ingest, validate, and structure live geospatial data into PostgreSQL schemas."
+  },
+  {
+    "claim": "Action Center designed ETL pipelines to ingest, validate, and structure live geospatial data into PostgreSQL schemas",
+    "type": "tech",
+    "source_bullet": "Built backend infrastructure for a regional hazard- and risk-assessment platform: designed ETL pipelines to ingest, validate, and structure live geospatial data into PostgreSQL schemas."
+  },
+  {
+    "claim": "Action Center integrated Mistral via API to generate AI-powered, location-based risk summaries",
+    "type": "tech",
+    "source_bullet": "Integrated Mistral via API to generate AI-powered, location-based risk summaries, and reduced API response times by 62% through query optimization and caching under operational load."
+  },
+  {
+    "claim": "Action Center reduced API response times by 62% through query optimization and caching under operational load",
+    "type": "quantitative",
+    "source_bullet": "Integrated Mistral via API to generate AI-powered, location-based risk summaries, and reduced API response times by 62% through query optimization and caching under operational load."
+  },
+  {
+    "claim": "Action Center documented all pipeline logic and data flow, enabling continued team maintenance and knowledge transfer after",
+    "type": "soft",
+    "source_bullet": "Documented all pipeline logic and data flow, enabling continued team maintenance and knowledge transfer after."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata)",
+    "type": "tech",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection achieved 245% F1 improvement over baseline (0.2105 to 0.7273)",
+    "type": "quantitative",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection achieved 0.9231 recall on holdout",
+    "type": "quantitative",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection demonstrated strong fraud capture on a heavily imbalanced dataset",
+    "type": "soft",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection engineered a cross-platform adaptation pipeline using transfer learning",
+    "type": "tech",
+    "source_bullet": "Engineered a cross-platform adaptation pipeline using transfer learning to migrate a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada), expanding labeled data under limited ground-truth constraints."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection migrated a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada)",
+    "type": "soft",
+    "source_bullet": "Engineered a cross-platform adaptation pipeline using transfer learning to migrate a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada), expanding labeled data under limited ground-truth constraints."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection expanded labeled data under limited ground-truth constraints",
+    "type": "soft",
+    "source_bullet": "Engineered a cross-platform adaptation pipeline using transfer learning to migrate a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada), expanding labeled data under limited ground-truth constraints."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection applied late-fusion ensemble strategies (average, weighted, stacking)",
+    "type": "tech",
+    "source_bullet": "Applied late-fusion ensemble strategies (average, weighted, stacking) with fixed split governance and holdout isolation to ensure evaluation integrity and prevent data leakage."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection ensured evaluation integrity and prevent data leakage",
+    "type": "soft",
+    "source_bullet": "Applied late-fusion ensemble strategies (average, weighted, stacking) with fixed split governance and holdout isolation to ensure evaluation integrity and prevent data leakage."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection combined modality-specific preprocessing and feature extraction across text, image, and structured metadata inputs",
+    "type": "tech",
+    "source_bullet": "Combined modality-specific preprocessing and feature extraction across text, image, and structured metadata inputs to address the gap left by single-modality detection systems."
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection addressed the gap left by single-modality detection systems",
+    "type": "soft",
+    "source_bullet": "Combined modality-specific preprocessing and feature extraction across text, image, and structured metadata inputs to address the gap left by single-modality detection systems."
+  },
+  {
+    "claim": "Glazed built a production-grade conversational AI on a 3-level RAPTOR retrieval tree",
+    "type": "tech",
+    "source_bullet": "Built a production-grade conversational AI on a 3-level RAPTOR retrieval tree and a 4-stage BlendedRAG pipeline (BM25, pgvector dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking), measurably improving retrieval quality and answer relevance end-to-end."
+  },
+  {
+    "claim": "Glazed built a production-grade conversational AI on a 4-stage BlendedRAG pipeline",
+    "type": "tech",
+    "source_bullet": "Built a production-grade conversational AI on a 3-level RAPTOR retrieval tree and a 4-stage BlendedRAG pipeline (BM25, pgvector dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking), measurably improving retrieval quality and answer relevance end-to-end."
+  },
+  {
+    "claim": "Glazed measurably improved retrieval quality and answer relevance end-to-end",
+    "type": "soft",
+    "source_bullet": "Built a production-grade conversational AI on a 3-level RAPTOR retrieval tree and a 4-stage BlendedRAG pipeline (BM25, pgvector dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking), measurably improving retrieval quality and answer relevance end-to-end."
+  },
+  {
+    "claim": "Glazed shipped an embeddable lead-capture widget",
+    "type": "soft",
+    "source_bullet": "Shipped an embeddable lead-capture widget and a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics, and documented architecture and maintenance steps for non-technical stakeholders."
+  },
+  {
+    "claim": "Glazed shipped a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics",
+    "type": "soft",
+    "source_bullet": "Shipped an embeddable lead-capture widget and a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics, and documented architecture and maintenance steps for non-technical stakeholders."
+  },
+  {
+    "claim": "Glazed documented architecture and maintenance steps for non-technical stakeholders",
+    "type": "soft",
+    "source_bullet": "Shipped an embeddable lead-capture widget and a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics, and documented architecture and maintenance steps for non-technical stakeholders."
+  },
+  {
+    "claim": "Glazed implemented a one-command demo mode with deterministic fixture fallback for reproducible evaluation and stakeholder walkthroughs",
+    "type": "tech",
+    "source_bullet": "Implemented a one-command demo mode with deterministic fixture fallback for reproducible evaluation and stakeholder walkthroughs."
+  },
+  {
+    "claim": "DriftWatch built a label-free model-monitoring system with an automated ETL pipeline",
+    "type": "tech",
+    "source_bullet": "Built a label-free model-monitoring system with an automated ETL pipeline that ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence."
+  },
+  {
+    "claim": "DriftWatch ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence",
+    "type": "tech",
+    "source_bullet": "Built a label-free model-monitoring system with an automated ETL pipeline that ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence."
+  },
+  {
+    "claim": "DriftWatch engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery",
+    "type": "tech",
+    "source_bullet": "Engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery, translating raw statistical drift signals into actionable operational data."
+  },
+  {
+    "claim": "DriftWatch translated raw statistical drift signals into actionable operational data",
+    "type": "soft",
+    "source_bullet": "Engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery, translating raw statistical drift signals into actionable operational data."
+  },
+  {
+    "claim": "DriftWatch deployed via Docker Compose with environment-configurable thresholds and automated weekly report generation",
+    "type": "tech",
+    "source_bullet": "Deployed via Docker Compose with environment-configurable thresholds and automated weekly report generation."
+  },
+  {
+    "claim": "CommitMap built a full-stack analytics platform that ingests 1000+ GitHub commits",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews."
+  },
+  {
+    "claim": "CommitMap produces a radar-style developer 'fingerprint'",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews."
+  },
+  {
+    "claim": "CommitMap produces an AI-generated narrative summary",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews."
+  },
+  {
+    "claim": "CommitMap produces a shareable public card with Open Graph previews",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews."
+  },
+  {
+    "claim": "CommitMap implemented a React 18 + TypeScript + Vite frontend",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway."
+  },
+  {
+    "claim": "CommitMap implemented a FastAPI + Celery backend",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway."
+  },
+  {
+    "claim": "CommitMap implemented Supabase Auth",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway."
+  },
+  {
+    "claim": "CommitMap implemented Upstash Redis caching",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway."
+  },
+  {
+    "claim": "CommitMap implemented GitHub OAuth",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway."
+  },
+  {
+    "claim": "CommitMap deployed on Vercel + Railway",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway."
+  },
+  {
+    "claim": "CommitMap optimized LLM API usage reducing cost by 98% per profile analysis",
+    "type": "quantitative",
+    "source_bullet": "Optimized LLM API usage reducing cost by 98% per profile analysis through prompt engineering and aggressive caching strategies."
+  },
+  {
+    "claim": "CommitMap optimized LLM API usage through prompt engineering and aggressive caching strategies",
+    "type": "tech",
+    "source_bullet": "Optimized LLM API usage reducing cost by 98% per profile analysis through prompt engineering and aggressive caching strategies."
+  }
+]

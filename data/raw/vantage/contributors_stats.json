@@ -1,0 +1,118 @@
+[
+  {
+    "total": 36,
+    "weeks": [
+      {
+        "w": 1774137600,
+        "a": 67086,
+        "d": 973,
+        "c": 30
+      },
+      {
+        "w": 1774742400,
+        "a": 92,
+        "d": 17,
+        "c": 6
+      },
+      {
+        "w": 1775347200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1775952000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1776556800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777161600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777766400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778371200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778976000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1779580800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780185600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780790400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1781395200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782000000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782604800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "author": {
+      "login": "agilap",
+      "id": 218345598,
+      "node_id": "U_kgDODQOwfg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/218345598?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/agilap",
+      "html_url": "https://github.com/agilap",
+      "followers_url": "https://api.github.com/users/agilap/followers",
+      "following_url": "https://api.github.com/users/agilap/following{/other_user}",
+      "gists_url": "https://api.github.com/users/agilap/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/agilap/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/agilap/subscriptions",
+      "organizations_url": "https://api.github.com/users/agilap/orgs",
+      "repos_url": "https://api.github.com/users/agilap/repos",
+      "events_url": "https://api.github.com/users/agilap/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/agilap/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    }
+  }
+]

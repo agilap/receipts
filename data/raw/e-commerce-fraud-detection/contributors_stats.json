@@ -1,0 +1,422 @@
+[
+  {
+    "total": 1,
+    "weeks": [
+      {
+        "w": 1771718400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1772323200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1772928000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1773532800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1774137600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1774742400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1775347200,
+        "a": 7,
+        "d": 7,
+        "c": 1
+      },
+      {
+        "w": 1775952000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1776556800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777161600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777766400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778371200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778976000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1779580800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780185600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780790400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1781395200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782000000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782604800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "author": {
+      "login": "VinnRe",
+      "id": 112543408,
+      "node_id": "U_kgDOBrVGsA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112543408?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/VinnRe",
+      "html_url": "https://github.com/VinnRe",
+      "followers_url": "https://api.github.com/users/VinnRe/followers",
+      "following_url": "https://api.github.com/users/VinnRe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/VinnRe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/VinnRe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/VinnRe/subscriptions",
+      "organizations_url": "https://api.github.com/users/VinnRe/orgs",
+      "repos_url": "https://api.github.com/users/VinnRe/repos",
+      "events_url": "https://api.github.com/users/VinnRe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/VinnRe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    }
+  },
+  {
+    "total": 4,
+    "weeks": [
+      {
+        "w": 1771718400,
+        "a": 2395,
+        "d": 1002,
+        "c": 4
+      },
+      {
+        "w": 1772323200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1772928000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1773532800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1774137600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1774742400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1775347200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1775952000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1776556800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777161600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777766400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778371200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778976000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1779580800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780185600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780790400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1781395200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782000000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782604800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "author": {
+      "login": "agilap",
+      "id": 218345598,
+      "node_id": "U_kgDODQOwfg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/218345598?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/agilap",
+      "html_url": "https://github.com/agilap",
+      "followers_url": "https://api.github.com/users/agilap/followers",
+      "following_url": "https://api.github.com/users/agilap/following{/other_user}",
+      "gists_url": "https://api.github.com/users/agilap/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/agilap/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/agilap/subscriptions",
+      "organizations_url": "https://api.github.com/users/agilap/orgs",
+      "repos_url": "https://api.github.com/users/agilap/repos",
+      "events_url": "https://api.github.com/users/agilap/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/agilap/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    }
+  },
+  {
+    "total": 25,
+    "weeks": [
+      {
+        "w": 1771718400,
+        "a": 20678,
+        "d": 2927,
+        "c": 8
+      },
+      {
+        "w": 1772323200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1772928000,
+        "a": 3784,
+        "d": 2996,
+        "c": 11
+      },
+      {
+        "w": 1773532800,
+        "a": 5949,
+        "d": 13,
+        "c": 4
+      },
+      {
+        "w": 1774137600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1774742400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1775347200,
+        "a": 28439,
+        "d": 25842,
+        "c": 2
+      },
+      {
+        "w": 1775952000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1776556800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777161600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1777766400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778371200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1778976000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1779580800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780185600,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1780790400,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1781395200,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782000000,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      },
+      {
+        "w": 1782604800,
+        "a": 0,
+        "d": 0,
+        "c": 0
+      }
+    ],
+    "author": {
+      "login": "oocim",
+      "id": 116318345,
+      "node_id": "U_kgDOBu7giQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116318345?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/oocim",
+      "html_url": "https://github.com/oocim",
+      "followers_url": "https://api.github.com/users/oocim/followers",
+      "following_url": "https://api.github.com/users/oocim/following{/other_user}",
+      "gists_url": "https://api.github.com/users/oocim/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/oocim/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/oocim/subscriptions",
+      "organizations_url": "https://api.github.com/users/oocim/orgs",
+      "repos_url": "https://api.github.com/users/oocim/repos",
+      "events_url": "https://api.github.com/users/oocim/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/oocim/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    }
+  }
+]

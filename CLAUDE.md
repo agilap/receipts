@@ -28,7 +28,7 @@ Schedule (evenings, ~3 weeks alongside Mulat)
 Session 1 (~3h): repo init, 5-line README, evidence extraction script for agilap, raw JSON committed
 Session 2: claim decomposition prompt + taxonomy; run on your real resume, eyeball quality, iterate until claims are clean atoms
 Sessions 3–4: verification core — embeddings, retrieval, NLI, verdict logic. The load-bearing sessions; steal time from UI if needed, never from eval
-Session 5: label the 60-claim eval set, run metrics, fix the single worst failure mode only
+Session 5: label the 60-claim eval set, run metrics, fix the single worst failure mode only by you (CLAUDE)
 Session 6: UI page
 Session 7: run on your own resume, screenshot, README with eval table, 90-sec demo video
 Session 8: deploy (Vercel front + small API host or tunnel-for-video), post to r/PinoyProgrammer + dev Twitter; optional: share in the career-ops Discord as "the verification layer career-ops' disclaimer says you need"

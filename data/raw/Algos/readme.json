@@ -1,0 +1,18 @@
+{
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "61a0d7e7d7ee8882708f86c69a6840f9e6128069",
+  "size": 926,
+  "url": "https://api.github.com/repos/agilap/Algos/contents/README.md?ref=main",
+  "html_url": "https://github.com/agilap/Algos/blob/main/README.md",
+  "git_url": "https://api.github.com/repos/agilap/Algos/git/blobs/61a0d7e7d7ee8882708f86c69a6840f9e6128069",
+  "download_url": "https://raw.githubusercontent.com/agilap/Algos/main/README.md",
+  "type": "file",
+  "content": "IyBBbGdvcwpSZXZpZXcgYWxnb3JpdGhtcyB3aXRoIG9uZSBwcm9qZWN0IGF0\nIGEgdGltZS4KCiMjIFByb2plY3QgMSAoQ2FjaGUgJiBNZW1vcnkgU2ltdWxh\ndG9yKQoKU3RhcnQgaGVyZToKLSBwcm9qZWN0MV9jYWNoZV9zaW11bGF0b3Iv\nUkVBRE1FLm1kCi0gcHJvamVjdDFfY2FjaGVfc2ltdWxhdG9yL2RvY3Mvd2hh\ndF9pc19hX2NhY2hlLm1kCgojIyBQcm9qZWN0IDEgc3RydWN0dXJlCgpgYGAK\nYWxnby1zeXN0ZW1zLwoJcHJvamVjdDJfY2FjaGVfc2ltdWxhdG9yLwoJCXNy\nYy8KCQl0ZXN0cy8KCQlkb2NzLwpgYGAKCiMjIFByb2plY3QgMSBnb2Fscwot\nIEJ1aWxkIGEgY2FjaGUgaW50ZXJmYWNlCi0gSW1wbGVtZW50IExSVSBhbmQg\nTEZVCi0gUnVuIHdvcmtsb2FkcyBhbmQgY29tcGFyZQotIFdyaXRlIHNob3J0\nIG5vdGVzIGFib3V0IHRyYWRlb2ZmcwoKIyMgQ3VycmVudCBGb2N1czogUHJv\namVjdCAyIChNaW5pIFNlYXJjaCBFbmdpbmUpCgpTdGFydCBoZXJlOgotIHBy\nb2plY3QyX3NlYXJjaF9lbmdpbmUvUkVBRE1FLm1kCi0gcHJvamVjdDJfc2Vh\ncmNoX2VuZ2luZS9kb2NzL3doYXRfaXNfc2VhcmNoLm1kCgojIyBQcm9qZWN0\nIDIgc3RydWN0dXJlCgpgYGAKYWxnby1zeXN0ZW1zLwoJcHJvamVjdDFfY2Fj\naGVfc2ltdWxhdG9yLwoJcHJvamVjdDJfc2VhcmNoX2VuZ2luZS8KCQlzcmMv\nCgkJdGVzdHMvCgkJZG9jcy8KYGBgCgojIyBQcm9qZWN0IDIgZ29hbHMKLSBM\nZWFybiB0byByZWFkIHRleHQgYW5kIHR1cm4gaXQgaW50byB0b2tlbnMgKGNs\nZWFuIHdvcmRzKS4KLSBNYXAgZWFjaCB0b2tlbiB0byB0aGUgZG9jdW1lbnRz\nIHRoYXQgY29udGFpbiBpdC4KLSBSZXR1cm4gZG9jdW1lbnRzIHRoYXQgbWF0\nY2ggYSBxdWVyeSBhbmQgcmFuayBieSBURi4KLSBTdWdnZXN0IHdvcmRzIHRo\nYXQgc3RhcnQgd2l0aCBhIHByZWZpeC4KCgo=\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/agilap/Algos/contents/README.md?ref=main",
+    "git": "https://api.github.com/repos/agilap/Algos/git/blobs/61a0d7e7d7ee8882708f86c69a6840f9e6128069",
+    "html": "https://github.com/agilap/Algos/blob/main/README.md"
+  }
+}

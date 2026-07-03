@@ -1,0 +1,18 @@
+{
+  "name": "requirements.txt",
+  "path": "requirements.txt",
+  "sha": "9b30a53dc58b89fc6f90e58cbc0d5f52b802b145",
+  "size": 361,
+  "url": "https://api.github.com/repos/oocim/e-commerce-fraud-detection/contents/requirements.txt?ref=main",
+  "html_url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/requirements.txt",
+  "git_url": "https://api.github.com/repos/oocim/e-commerce-fraud-detection/git/blobs/9b30a53dc58b89fc6f90e58cbc0d5f52b802b145",
+  "download_url": "https://raw.githubusercontent.com/oocim/e-commerce-fraud-detection/main/requirements.txt",
+  "type": "file",
+  "content": "IyBEYXRhIHByb2Nlc3NpbmcNCnBhbmRhcz49Mi4wLjANCm51bXB5Pj0xLjI0\nLjANCnNjaXB5Pj0xLjEwLjANCg0KIyBOTFANCm5sdGs+PTMuOC4wDQp0cmFu\nc2Zvcm1lcnM+PTQuMzAuMA0KDQojIE1hY2hpbmUgbGVhcm5pbmcNCnNjaWtp\ndC1sZWFybj49MS4yLjANCmltYmFsYW5jZWQtbGVhcm4+PTAuMTEuMA0KeGdi\nb29zdD49Mi4wLjANCmpvYmxpYj49MS4zLjANCg0KIyBEZWVwIGxlYXJuaW5n\nDQp0b3JjaD49Mi4wLjANCnRvcmNodmlzaW9uPj0wLjE1LjANCg0KIyBJbWFn\nZSAmIEhUVFANClBpbGxvdz49OS41LjANCnJlcXVlc3RzPj0yLjMxLjANCg0K\nIyBVdGlsaXRpZXMNCnRxZG0+PTQuNjUuMA0KbWF0cGxvdGxpYj49My43LjAN\nCg==\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/oocim/e-commerce-fraud-detection/contents/requirements.txt?ref=main",
+    "git": "https://api.github.com/repos/oocim/e-commerce-fraud-detection/git/blobs/9b30a53dc58b89fc6f90e58cbc0d5f52b802b145",
+    "html": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/requirements.txt"
+  }
+}

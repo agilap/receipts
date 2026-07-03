@@ -1,0 +1,66 @@
+[
+  {
+    "total": 5,
+    "weeks": [
+      {
+        "w": 1782604800,
+        "a": 4856,
+        "d": 121,
+        "c": 5
+      }
+    ],
+    "author": {
+      "login": "claude",
+      "id": 81847,
+      "node_id": "MDQ6VXNlcjgxODQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/claude",
+      "html_url": "https://github.com/claude",
+      "followers_url": "https://api.github.com/users/claude/followers",
+      "following_url": "https://api.github.com/users/claude/following{/other_user}",
+      "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+      "organizations_url": "https://api.github.com/users/claude/orgs",
+      "repos_url": "https://api.github.com/users/claude/repos",
+      "events_url": "https://api.github.com/users/claude/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/claude/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    }
+  },
+  {
+    "total": 7,
+    "weeks": [
+      {
+        "w": 1782604800,
+        "a": 5361,
+        "d": 218,
+        "c": 7
+      }
+    ],
+    "author": {
+      "login": "agilap",
+      "id": 218345598,
+      "node_id": "U_kgDODQOwfg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/218345598?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/agilap",
+      "html_url": "https://github.com/agilap",
+      "followers_url": "https://api.github.com/users/agilap/followers",
+      "following_url": "https://api.github.com/users/agilap/following{/other_user}",
+      "gists_url": "https://api.github.com/users/agilap/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/agilap/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/agilap/subscriptions",
+      "organizations_url": "https://api.github.com/users/agilap/orgs",
+      "repos_url": "https://api.github.com/users/agilap/repos",
+      "events_url": "https://api.github.com/users/agilap/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/agilap/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    }
+  }
+]

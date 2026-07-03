@@ -1,0 +1,18 @@
+{
+  "name": "requirements.txt",
+  "path": "requirements.txt",
+  "sha": "bb0d21072999651c013e2b31bc1a433d4c7ee45c",
+  "size": 278,
+  "url": "https://api.github.com/repos/agilap/driftwatch/contents/requirements.txt?ref=feat/ingest-model-registry",
+  "html_url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/requirements.txt",
+  "git_url": "https://api.github.com/repos/agilap/driftwatch/git/blobs/bb0d21072999651c013e2b31bc1a433d4c7ee45c",
+  "download_url": "https://raw.githubusercontent.com/agilap/driftwatch/feat/ingest-model-registry/requirements.txt",
+  "type": "file",
+  "content": "ZmFzdGFwaT09MC4xMTUuMTIKdXZpY29ybltzdGFuZGFyZF09PTAuMzQuMApz\ncWxhbGNoZW15W2FzeW5jaW9dPT0yLjAuMzgKYXN5bmNwZz09MC4zMC4wCmFs\nZW1iaWM9PTEuMTUuMQpweWRhbnRpYy1zZXR0aW5ncz09Mi44LjEKcHlkYW50\naWNbZW1haWxdPT0yLjExLjEKc2NpcHk9PTEuMTUuMgpudW1weT09Mi4yLjMK\nYXBzY2hlZHVsZXI9PTMuMTEuMApodHRweD09MC4yOC4xCnB5dGVzdD09OC4z\nLjUKcHl0ZXN0LWFzeW5jaW89PTAuMjUuMwpydWZmPT0wLjExLjAKYmxhY2s9\nPTI1LjEuMAo=\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/agilap/driftwatch/contents/requirements.txt?ref=feat/ingest-model-registry",
+    "git": "https://api.github.com/repos/agilap/driftwatch/git/blobs/bb0d21072999651c013e2b31bc1a433d4c7ee45c",
+    "html": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/requirements.txt"
+  }
+}

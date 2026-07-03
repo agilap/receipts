@@ -105,5 +105,12 @@
   "forks": 0,
   "open_issues": 0,
   "watchers": 0,
-  "default_branch": "main"
+  "default_branch": "main",
+  "permissions": {
+    "admin": true,
+    "maintain": true,
+    "push": true,
+    "triage": true,
+    "pull": true
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "name": "requirements.txt",
+  "path": "requirements.txt",
+  "sha": "6d11f3ba1efb05582e5106324c9996646d8d980c",
+  "size": 269,
+  "url": "https://api.github.com/repos/agilap/synthetica/contents/requirements.txt?ref=main",
+  "html_url": "https://github.com/agilap/synthetica/blob/main/requirements.txt",
+  "git_url": "https://api.github.com/repos/agilap/synthetica/git/blobs/6d11f3ba1efb05582e5106324c9996646d8d980c",
+  "download_url": "https://raw.githubusercontent.com/agilap/synthetica/main/requirements.txt",
+  "type": "file",
+  "content": "dG9yY2g9PTIuMi4wCnhmb3JtZXJzPT0wLjAuMjYucG9zdDEKYml0c2FuZGJ5\ndGVzPT0wLjQzLjMKZGlmZnVzZXJzPT0wLjI5LjIKcGVmdD09MC4xMS4xCnRy\nYW5zZm9ybWVycz09NC40MS4yCmFjY2VsZXJhdGU9PTAuMzAuMQp0b3JjaHZp\nc2lvbj09MC4xNy4wCmdyYWRpbz09NC4yNS4wCm9wZW5jdi1weXRob249PTQu\nOS4wLjgwClBpbGxvdz09MTAuMy4wCm51bXB5PT0xLjI2LjQKcHl5YW1sPj02\nLjAKcHl0ZXN0Pj04LjAKcHl0ZXN0LW1vY2s+PTMuMTIKc2NpcHk+PTEuMTI=\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/agilap/synthetica/contents/requirements.txt?ref=main",
+    "git": "https://api.github.com/repos/agilap/synthetica/git/blobs/6d11f3ba1efb05582e5106324c9996646d8d980c",
+    "html": "https://github.com/agilap/synthetica/blob/main/requirements.txt"
+  }
+}
