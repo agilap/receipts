@@ -1,0 +1,18 @@
+{
+  "name": "pyproject.toml",
+  "path": "pyproject.toml",
+  "sha": "10c1d4a65bac227020dad6b72b19ffe52705c8af",
+  "size": 1590,
+  "url": "https://api.github.com/repos/agilap/ISAAC/contents/pyproject.toml?ref=main",
+  "html_url": "https://github.com/agilap/ISAAC/blob/main/pyproject.toml",
+  "git_url": "https://api.github.com/repos/agilap/ISAAC/git/blobs/10c1d4a65bac227020dad6b72b19ffe52705c8af",
+  "download_url": "https://raw.githubusercontent.com/agilap/ISAAC/main/pyproject.toml",
+  "type": "file",
+  "content": "W2J1aWxkLXN5c3RlbV0KcmVxdWlyZXMgPSBbImhhdGNobGluZz49MS4yNy4w\nIl0KYnVpbGQtYmFja2VuZCA9ICJoYXRjaGxpbmcuYnVpbGQiCgpbcHJvamVj\ndF0KbmFtZSA9ICJpc2FhYy12YXVsdCIKdmVyc2lvbiA9ICIwLjQuMCIKZGVz\nY3JpcHRpb24gPSAiSVNBQUM6IHRoZSBsb2NhbC1maXJzdCBicmlkZ2UgYmV0\nd2VlbiBMTE1zIGFuZCB5b3VyIE9ic2lkaWFuIHZhdWx0LiIKcmVhZG1lID0g\nIlJFQURNRS5tZCIKcmVxdWlyZXMtcHl0aG9uID0gIj49My4xMSIKbGljZW5z\nZSA9IHsgdGV4dCA9ICJNSVQiIH0KYXV0aG9ycyA9IFsKICB7IG5hbWUgPSAi\nQWxleCIgfQpdCmNsYXNzaWZpZXJzID0gWwogICJEZXZlbG9wbWVudCBTdGF0\ndXMgOjogMyAtIEFscGhhIiwKICAiSW50ZW5kZWQgQXVkaWVuY2UgOjogRGV2\nZWxvcGVycyIsCiAgIkxpY2Vuc2UgOjogT1NJIEFwcHJvdmVkIDo6IE1JVCBM\naWNlbnNlIiwKICAiUHJvZ3JhbW1pbmcgTGFuZ3VhZ2UgOjogUHl0aG9uIDo6\nIDMiLAogICJQcm9ncmFtbWluZyBMYW5ndWFnZSA6OiBQeXRob24gOjogMy4x\nMSIsCiAgIlR5cGluZyA6OiBUeXBlZCIsCl0KZGVwZW5kZW5jaWVzID0gWwog\nICJibTI1cz49MC4yLjAiLAogICJtYXJrZG93bi1pdC1weT49My4wLjAiLAog\nICJtY3A+PTEuOS4wIiwKICAicHl0aG9uLWZyb250bWF0dGVyPj0xLjEuMCIs\nCiAgInNlbnRlbmNlLXRyYW5zZm9ybWVycz49My4wLjAiLAogICJzcWxpdGUt\ndmVjPj0wLjEuNiIsCiAgInR5cGVyPj0wLjEyLjMiLAogICJ3YXRjaGRvZz49\nNC4wLjAiLAogICJ4eGhhc2g+PTMuNS4wIiwKXQoKW3Byb2plY3Qub3B0aW9u\nYWwtZGVwZW5kZW5jaWVzXQpyZW1vdGUgPSBbCiAgIm9wZW5haT49MS4zMC4w\nIiwKICAidm95YWdlYWk+PTAuMi4zIiwKXQoKW3Byb2plY3Quc2NyaXB0c10K\naXNhYWMtdmF1bHQgPSAiaXNhYWNfdmF1bHQuY2xpOm1haW4iCgpbcHJvamVj\ndC51cmxzXQpIb21lcGFnZSA9ICJodHRwczovL2dpdGh1Yi5jb20vYWdpbGFw\nL0lTQUFDIgpSZXBvc2l0b3J5ID0gImh0dHBzOi8vZ2l0aHViLmNvbS9hZ2ls\nYXAvSVNBQUMiCklzc3VlcyA9ICJodHRwczovL2dpdGh1Yi5jb20vYWdpbGFw\nL0lTQUFDL2lzc3VlcyIKClt0b29sLmhhdGNoLmJ1aWxkLnRhcmdldHMud2hl\nZWxdCnBhY2thZ2VzID0gWyJpc2FhY192YXVsdCJdCgpbdG9vbC5weXRlc3Qu\naW5pX29wdGlvbnNdCmFkZG9wdHMgPSAiLXEiCnRlc3RwYXRocyA9IFsidGVz\ndHMiXQoKW3Rvb2wucnVmZl0KbGluZS1sZW5ndGggPSAxMDAKdGFyZ2V0LXZl\ncnNpb24gPSAicHkzMTEiCgpbdG9vbC5ydWZmLmxpbnRdCnNlbGVjdCA9IFsi\nRSIsICJGIiwgIkkiLCAiVVAiXQoKW3Rvb2wubXlweV0KcHl0aG9uX3ZlcnNp\nb24gPSAiMy4xMSIKZmlsZXMgPSBbImlzYWFjX3ZhdWx0IiwgInRlc3RzIl0K\nd2Fybl91bnVzZWRfY29uZmlncyA9IHRydWUKZGlzYWxsb3dfdW50eXBlZF9k\nZWZzID0gdHJ1ZQpjaGVja191bnR5cGVkX2RlZnMgPSB0cnVlCm5vX2ltcGxp\nY2l0X29wdGlvbmFsID0gdHJ1ZQoKW2RlcGVuZGVuY3ktZ3JvdXBzXQpkZXYg\nPSBbCiAgIm15cHk+PTEuMTAuMCIsCiAgInB5dGVzdD49OC4yLjAiLAogICJy\ndWZmPj0wLjYuMCIsCl0K\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/agilap/ISAAC/contents/pyproject.toml?ref=main",
+    "git": "https://api.github.com/repos/agilap/ISAAC/git/blobs/10c1d4a65bac227020dad6b72b19ffe52705c8af",
+    "html": "https://github.com/agilap/ISAAC/blob/main/pyproject.toml"
+  }
+}

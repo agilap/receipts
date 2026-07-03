@@ -1,0 +1,18 @@
+{
+  "name": "requirements.txt",
+  "path": "requirements.txt",
+  "sha": "e92fff5b592854ffcd7cafe712b8489a81196f36",
+  "size": 600,
+  "url": "https://api.github.com/repos/agilap/Veritas/contents/requirements.txt?ref=main",
+  "html_url": "https://github.com/agilap/Veritas/blob/main/requirements.txt",
+  "git_url": "https://api.github.com/repos/agilap/Veritas/git/blobs/e92fff5b592854ffcd7cafe712b8489a81196f36",
+  "download_url": "https://raw.githubusercontent.com/agilap/Veritas/main/requirements.txt",
+  "type": "file",
+  "content": "LSB0cmFuc2Zvcm1lcnM+PTQuNDAuMAotIHRvcmNoPj0yLjIuMAotIG9wZW4t\nY2xpcC10b3JjaD49Mi4yNC4wCi0gb3BlbmN2LXB5dGhvbj49NC45LjAKLSBn\ncmFkaW8+PTQuMC4wCi0gcmVxdWVzdHM+PTIuMzEuMAotIGJlYXV0aWZ1bHNv\ndXA0Pj00LjEyLjAKLSBkYXRhc2V0cz49Mi4xOC4wCi0gYWNjZWxlcmF0ZT49\nMC4yOS4wCi0gcGVmdD49MC4xMC4wCi0gcHl0aG9uLWRvdGVudj49MS4wLjAK\nLSBwaWxsb3c+PTEwLjAuMAotIHRhdmlseS1weXRob24+PTAuMy4wCi0gc2Np\na2l0LWxlYXJuPj0xLjQuMAoKIyBvcHRpb25hbCAocmVxdWlyZXMgfjZHQiBW\nUkFNKTogcGlwIGluc3RhbGwgc2FsZXNmb3JjZS1sYXZpcwoKYml0c2FuZGJ5\ndGVzPj0wLjQzLjAKIyBvcHRpb25hbCBjYXB0aW9uaW5nIG1vZGVsIChsaWdo\ndHdlaWdodCwgfjk5ME1CKTogYWxyZWFkeSBpbmNsdWRlZCB2aWEgdHJhbnNm\nb3JtZXJzCiMgQkxJUC0yIChibGlwMi1vcHQtMi43YikgaXMgTk9UIHVzZWQg\n4oCUIHRvbyBsYXJnZSBmb3IgNEdCIFZSQU0KIyBVc2UgU2FsZXNmb3JjZS9i\nbGlwLWltYWdlLWNhcHRpb25pbmctYmFzZSBpbnN0ZWFkIChsb2FkZWQgdmlh\nIHRyYW5zZm9ybWVycykK\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/agilap/Veritas/contents/requirements.txt?ref=main",
+    "git": "https://api.github.com/repos/agilap/Veritas/git/blobs/e92fff5b592854ffcd7cafe712b8489a81196f36",
+    "html": "https://github.com/agilap/Veritas/blob/main/requirements.txt"
+  }
+}

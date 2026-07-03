@@ -1,0 +1,18 @@
+{
+  "name": "requirements.txt",
+  "path": "requirements.txt",
+  "sha": "ad1ecaa6e35b871aae1d87fb5962503fd492cf74",
+  "size": 182,
+  "url": "https://api.github.com/repos/agilap/vantage/contents/requirements.txt?ref=main",
+  "html_url": "https://github.com/agilap/vantage/blob/main/requirements.txt",
+  "git_url": "https://api.github.com/repos/agilap/vantage/git/blobs/ad1ecaa6e35b871aae1d87fb5962503fd492cf74",
+  "download_url": "https://raw.githubusercontent.com/agilap/vantage/main/requirements.txt",
+  "type": "file",
+  "content": "b3BlbmFpCnBkZnBsdW1iZXIKcHlwZGYKcGFuZGFzCm9wZW5weXhsCmNocm9t\nYWRiCnBzeWNvcGcyLWJpbmFyeQpncmFkaW8KcHl0aG9uLWRvdGVudgoKIyBP\ncHRpb25hbCAtIG9ubHkgbmVlZGVkIGZvciAueGxzLCAueGxzYiwgLm9kcyBz\ndXBwb3J0CnhscmQ+PTIuMC4xCnB5eGxzYj49MS4wLjEwCm9kZnB5Pj0xLjQu\nMQo=\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/agilap/vantage/contents/requirements.txt?ref=main",
+    "git": "https://api.github.com/repos/agilap/vantage/git/blobs/ad1ecaa6e35b871aae1d87fb5962503fd492cf74",
+    "html": "https://github.com/agilap/vantage/blob/main/requirements.txt"
+  }
+}
