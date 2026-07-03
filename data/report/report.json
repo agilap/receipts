@@ -1,0 +1,746 @@
+[
+  {
+    "claim": "Diwa Tech leads engineering for Mulat, an AI driven burnout-risk forecasting engine using behavioral simulation to predict student outcomes weeks ahead",
+    "type": "soft",
+    "source_bullet": "Lead engineering for Mulat, an AI driven burnout-risk forecasting engine using behavioral simulation to predict student outcomes weeks ahead; selected into a competitive startup incubation cohort for funding.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Diwa Tech is selected into a competitive startup incubation cohort for funding",
+    "type": "soft",
+    "source_bullet": "Lead engineering for Mulat, an AI driven burnout-risk forecasting engine using behavioral simulation to predict student outcomes weeks ahead; selected into a competitive startup incubation cohort for funding.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product on FastAPI",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product on React",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product on TypeScript",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product with Supabase",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product with pgvector",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech architected a full-stack GenAI product with local Ollama inference",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech containerized the product via Docker Compose for reproducible, environment-portable deployment",
+    "type": "tech",
+    "source_bullet": "Architected a full-stack GenAI product on a FastAPI + React / TypeScript with Supabase, pgvector, and local Ollama inference, containerized via Docker Compose for reproducible, environment-portable deployment.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech engineered the core simulation engine on validated behavioral-science models",
+    "type": "tech",
+    "source_bullet": "Engineered the core simulation engine on validated behavioral-science models to deliver deterministic, interpretable outputs instead of opaque LLM generation.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Diwa Tech delivers deterministic, interpretable outputs instead of opaque LLM generation",
+    "type": "soft",
+    "source_bullet": "Engineered the core simulation engine on validated behavioral-science models to deliver deterministic, interpretable outputs instead of opaque LLM generation.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt built an LLM-powered underwriting-automation workflow for an enterprise client",
+    "type": "soft",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt designed multi-step decision logic for the underwriting-automation workflow",
+    "type": "soft",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt integrated external REST APIs in the underwriting-automation workflow",
+    "type": "tech",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Metawatt shipped a production-ready prototype across the full build cycle automating 10% of underwriting workflow",
+    "type": "quantitative",
+    "source_bullet": "Built an LLM-powered underwriting-automation workflow for an enterprise client designing multi-step decision logic, integrating external REST APIs, and shipping a production-ready prototype across the full build cycle automating 10% of underwriting workflow.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "quantitative claims need business/metrics evidence, not code"
+  },
+  {
+    "claim": "Metawatt implemented an n8n orchestration pipeline and AI agents with slash-command controls",
+    "type": "tech",
+    "source_bullet": "Implemented an n8n orchestration pipeline and AI agents with slash-command controls, giving non-technical operators real-time control and monitoring of the underwriting flow and translating a complex AI backend into a simple operator interface.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Metawatt gave non-technical operators real-time control and monitoring of the underwriting flow",
+    "type": "soft",
+    "source_bullet": "Implemented an n8n orchestration pipeline and AI agents with slash-command controls, giving non-technical operators real-time control and monitoring of the underwriting flow and translating a complex AI backend into a simple operator interface.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt translated a complex AI backend into a simple operator interface",
+    "type": "soft",
+    "source_bullet": "Implemented an n8n orchestration pipeline and AI agents with slash-command controls, giving non-technical operators real-time control and monitoring of the underwriting flow and translating a complex AI backend into a simple operator interface.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt led a 3-person team delivering end-to-end data-enrichment automation",
+    "type": "soft",
+    "source_bullet": "Led a 3-person team delivering end-to-end data-enrichment automation: integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs, with validation at each stage.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs",
+    "type": "tech",
+    "source_bullet": "Led a 3-person team delivering end-to-end data-enrichment automation: integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs, with validation at each stage.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Metawatt validated data at each stage of the data-enrichment automation",
+    "type": "soft",
+    "source_bullet": "Led a 3-person team delivering end-to-end data-enrichment automation: integrated external REST APIs with Python pipelines to extract, transform, validate, and route structured data from unstructured inputs, with validation at each stage.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt authored operator handoff documentation enabling non-technical staff to maintain the system independently",
+    "type": "soft",
+    "source_bullet": "Authored operator handoff documentation enabling non-technical staff to maintain the system independently, and operated across the full Software Development Life Cycle (SDLC) in a remote Agile environment sprint planning.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Metawatt operated across the full Software Development Life Cycle (SDLC) in a remote Agile environment sprint planning",
+    "type": "soft",
+    "source_bullet": "Authored operator handoff documentation enabling non-technical staff to maintain the system independently, and operated across the full Software Development Life Cycle (SDLC) in a remote Agile environment sprint planning.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Action Center built backend infrastructure for a regional hazard- and risk-assessment platform",
+    "type": "soft",
+    "source_bullet": "Built backend infrastructure for a regional hazard- and risk-assessment platform: designed ETL pipelines to ingest, validate, and structure live geospatial data into PostgreSQL schemas.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Action Center designed ETL pipelines to ingest, validate, and structure live geospatial data into PostgreSQL schemas",
+    "type": "tech",
+    "source_bullet": "Built backend infrastructure for a regional hazard- and risk-assessment platform: designed ETL pipelines to ingest, validate, and structure live geospatial data into PostgreSQL schemas.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Action Center integrated Mistral via API to generate AI-powered, location-based risk summaries",
+    "type": "tech",
+    "source_bullet": "Integrated Mistral via API to generate AI-powered, location-based risk summaries, and reduced API response times by 62% through query optimization and caching under operational load.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Action Center reduced API response times by 62% through query optimization and caching under operational load",
+    "type": "quantitative",
+    "source_bullet": "Integrated Mistral via API to generate AI-powered, location-based risk summaries, and reduced API response times by 62% through query optimization and caching under operational load.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "quantitative claims need business/metrics evidence, not code"
+  },
+  {
+    "claim": "Action Center documented all pipeline logic and data flow, enabling continued team maintenance and knowledge transfer after",
+    "type": "soft",
+    "source_bullet": "Documented all pipeline logic and data flow, enabling continued team maintenance and knowledge transfer after.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata)",
+    "type": "tech",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset.",
+    "verdict": "supported",
+    "evidence": [
+      {
+        "chunk_id": 111,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.7859,
+        "entailment": 0.8083,
+        "contradiction": 0.0232,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n### \ud83c\udfaf Goal\nBuild and evaluate a fraud detection framework for e-commerce listings using:\n- Text modality: hybrid RoBERTa + TF-IDF\n- Image moda"
+      },
+      {
+        "chunk_id": 109,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6761,
+        "entailment": 0.269,
+        "contradiction": 0.0396,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n# E-Commerce Fraud Detection: Multimodal Transfer Learning Framework\n\nThis repository is the thesis implementation of [Capinpin, Kobe Andrew S"
+      },
+      {
+        "chunk_id": 113,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6717,
+        "entailment": 0.0868,
+        "contradiction": 0.0051,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n## 2. Repository Layout\n\n```text\n.\n|- src/\n|  |- pipeline/      # preprocessing, local prep, pseudo-label and transfer-set builders\n|  |- trai"
+      }
+    ]
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection achieved 245% F1 improvement over baseline (0.2105 to 0.7273)",
+    "type": "quantitative",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "quantitative claims need business/metrics evidence, not code"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection achieved 0.9231 recall on holdout",
+    "type": "quantitative",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "quantitative claims need business/metrics evidence, not code"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection demonstrated strong fraud capture on a heavily imbalanced dataset",
+    "type": "soft",
+    "source_bullet": "Designed a multimodal fraud detection framework (RoBERTa + ResNet + metadata) achieving 245% F1 improvement over baseline (0.2105 to 0.7273) with 0.9231 recall on holdout, demonstrating strong fraud capture on a heavily imbalanced dataset.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection engineered a cross-platform adaptation pipeline using transfer learning",
+    "type": "tech",
+    "source_bullet": "Engineered a cross-platform adaptation pipeline using transfer learning to migrate a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada), expanding labeled data under limited ground-truth constraints.",
+    "verdict": "unsupported",
+    "evidence": [
+      {
+        "chunk_id": 109,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.7358,
+        "entailment": 0.2682,
+        "contradiction": 0.0347,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n# E-Commerce Fraud Detection: Multimodal Transfer Learning Framework\n\nThis repository is the thesis implementation of [Capinpin, Kobe Andrew S"
+      },
+      {
+        "chunk_id": 113,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6826,
+        "entailment": 0.0542,
+        "contradiction": 0.0106,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n## 2. Repository Layout\n\n```text\n.\n|- src/\n|  |- pipeline/      # preprocessing, local prep, pseudo-label and transfer-set builders\n|  |- trai"
+      },
+      {
+        "chunk_id": 125,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6536,
+        "entailment": 0.0492,
+        "contradiction": 0.0043,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n### E) Full Training Workflow (Transfer Ablation)\n\nBuild mixed local+former datasets, then train using profile ablation paths.\n\n```bash\npython"
+      }
+    ]
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection migrated a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada)",
+    "type": "soft",
+    "source_bullet": "Engineered a cross-platform adaptation pipeline using transfer learning to migrate a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada), expanding labeled data under limited ground-truth constraints.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection expanded labeled data under limited ground-truth constraints",
+    "type": "soft",
+    "source_bullet": "Engineered a cross-platform adaptation pipeline using transfer learning to migrate a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada), expanding labeled data under limited ground-truth constraints.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection applied late-fusion ensemble strategies (average, weighted, stacking)",
+    "type": "tech",
+    "source_bullet": "Applied late-fusion ensemble strategies (average, weighted, stacking) with fixed split governance and holdout isolation to ensure evaluation integrity and prevent data leakage.",
+    "verdict": "unsupported",
+    "evidence": [
+      {
+        "chunk_id": 111,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6848,
+        "entailment": 0.0647,
+        "contradiction": 0.0052,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n### \ud83c\udfaf Goal\nBuild and evaluate a fraud detection framework for e-commerce listings using:\n- Text modality: hybrid RoBERTa + TF-IDF\n- Image moda"
+      },
+      {
+        "chunk_id": 116,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.5947,
+        "entailment": 0.0211,
+        "contradiction": 0.031,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n### \u2699\ufe0f Processed Datasets\n- `data/processed/text_dataset.csv`\n- `data/processed/image_dataset.csv`\n- `data/processed/metadata_dataset.csv`\n- `"
+      },
+      {
+        "chunk_id": 114,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6131,
+        "entailment": 0.0201,
+        "contradiction": 0.0015,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n## 3. System Pipeline\n\n1. Raw CSV ingestion and cleaning\n2. Modality-specific dataset creation\n3. Optional synthetic augmentation and pseudo-l"
+      }
+    ]
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection ensured evaluation integrity and prevent data leakage",
+    "type": "soft",
+    "source_bullet": "Applied late-fusion ensemble strategies (average, weighted, stacking) with fixed split governance and holdout isolation to ensure evaluation integrity and prevent data leakage.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection combined modality-specific preprocessing and feature extraction across text, image, and structured metadata inputs",
+    "type": "tech",
+    "source_bullet": "Combined modality-specific preprocessing and feature extraction across text, image, and structured metadata inputs to address the gap left by single-modality detection systems.",
+    "verdict": "unsupported",
+    "evidence": [
+      {
+        "chunk_id": 111,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.7316,
+        "entailment": 0.3908,
+        "contradiction": 0.0048,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n### \ud83c\udfaf Goal\nBuild and evaluate a fraud detection framework for e-commerce listings using:\n- Text modality: hybrid RoBERTa + TF-IDF\n- Image moda"
+      },
+      {
+        "chunk_id": 113,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6776,
+        "entailment": 0.205,
+        "contradiction": 0.0123,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n## 2. Repository Layout\n\n```text\n.\n|- src/\n|  |- pipeline/      # preprocessing, local prep, pseudo-label and transfer-set builders\n|  |- trai"
+      },
+      {
+        "chunk_id": 116,
+        "repo": "e-commerce-fraud-detection",
+        "type": "readme",
+        "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+        "retrieval_score": 0.6916,
+        "entailment": 0.1673,
+        "contradiction": 0.0087,
+        "excerpt": "From the README of repository e-commerce-fraud-detection:\n### \u2699\ufe0f Processed Datasets\n- `data/processed/text_dataset.csv`\n- `data/processed/image_dataset.csv`\n- `data/processed/metadata_dataset.csv`\n- `"
+      }
+    ]
+  },
+  {
+    "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection addressed the gap left by single-modality detection systems",
+    "type": "soft",
+    "source_bullet": "Combined modality-specific preprocessing and feature extraction across text, image, and structured metadata inputs to address the gap left by single-modality detection systems.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Glazed built a production-grade conversational AI on a 3-level RAPTOR retrieval tree",
+    "type": "tech",
+    "source_bullet": "Built a production-grade conversational AI on a 3-level RAPTOR retrieval tree and a 4-stage BlendedRAG pipeline (BM25, pgvector dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking), measurably improving retrieval quality and answer relevance end-to-end.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Glazed built a production-grade conversational AI on a 4-stage BlendedRAG pipeline",
+    "type": "tech",
+    "source_bullet": "Built a production-grade conversational AI on a 3-level RAPTOR retrieval tree and a 4-stage BlendedRAG pipeline (BM25, pgvector dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking), measurably improving retrieval quality and answer relevance end-to-end.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "Glazed measurably improved retrieval quality and answer relevance end-to-end",
+    "type": "soft",
+    "source_bullet": "Built a production-grade conversational AI on a 3-level RAPTOR retrieval tree and a 4-stage BlendedRAG pipeline (BM25, pgvector dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking), measurably improving retrieval quality and answer relevance end-to-end.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Glazed shipped an embeddable lead-capture widget",
+    "type": "soft",
+    "source_bullet": "Shipped an embeddable lead-capture widget and a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics, and documented architecture and maintenance steps for non-technical stakeholders.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Glazed shipped a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics",
+    "type": "soft",
+    "source_bullet": "Shipped an embeddable lead-capture widget and a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics, and documented architecture and maintenance steps for non-technical stakeholders.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Glazed documented architecture and maintenance steps for non-technical stakeholders",
+    "type": "soft",
+    "source_bullet": "Shipped an embeddable lead-capture widget and a Supabase-backed analytics dashboard surfacing leads, transcripts, and escalation metrics, and documented architecture and maintenance steps for non-technical stakeholders.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "Glazed implemented a one-command demo mode with deterministic fixture fallback for reproducible evaluation and stakeholder walkthroughs",
+    "type": "tech",
+    "source_bullet": "Implemented a one-command demo mode with deterministic fixture fallback for reproducible evaluation and stakeholder walkthroughs.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "DriftWatch built a label-free model-monitoring system with an automated ETL pipeline",
+    "type": "tech",
+    "source_bullet": "Built a label-free model-monitoring system with an automated ETL pipeline that ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence.",
+    "verdict": "unsupported",
+    "evidence": [
+      {
+        "chunk_id": 100,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.5588,
+        "entailment": 0.0511,
+        "contradiction": 0.2927,
+        "excerpt": "From the README of repository driftwatch:\n## API Reference\n\n| Method | Path | Description |\n|---|---|---|\n| `GET` | `/health` | Liveness and version check |\n| `POST` | `/models` | Register a monitored"
+      },
+      {
+        "chunk_id": 96,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.7055,
+        "entailment": 0.0043,
+        "contradiction": 0.0021,
+        "excerpt": "From the README of repository driftwatch:\n# DriftWatch\n\n![CI](https://github.com/agilap/driftwatch/actions/workflows/ci.yml/badge.svg)\n\nProduction model health monitor that detects data drift without "
+      },
+      {
+        "chunk_id": 97,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.5659,
+        "entailment": 0.0038,
+        "contradiction": 0.0988,
+        "excerpt": "From the README of repository driftwatch:\n## What it does\n\nDriftWatch tracks whether a deployed model is seeing data that looks different from what it learned during training.\n\nIn the loan risk scenar"
+      }
+    ]
+  },
+  {
+    "claim": "DriftWatch ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence",
+    "type": "tech",
+    "source_bullet": "Built a label-free model-monitoring system with an automated ETL pipeline that ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence.",
+    "verdict": "supported",
+    "evidence": [
+      {
+        "chunk_id": 99,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.7784,
+        "entailment": 0.9748,
+        "contradiction": 0.0044,
+        "excerpt": "From the README of repository driftwatch:\n## Key Concepts\n\n- Reference distribution vs production snapshot:\n  Reference data is the baseline (usually training data statistics). Production snapshots ar"
+      },
+      {
+        "chunk_id": 101,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6471,
+        "entailment": 0.2254,
+        "contradiction": 0.0211,
+        "excerpt": "From the README of repository driftwatch:\n## Configuration\n\nEnvironment variables (from `.env.example`):\n\n| Variable | Default | Description |\n|---|---|---|\n| `DATABASE_URL` | `postgresql+asyncpg://dr"
+      },
+      {
+        "chunk_id": 100,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.7036,
+        "entailment": 0.1019,
+        "contradiction": 0.0631,
+        "excerpt": "From the README of repository driftwatch:\n## API Reference\n\n| Method | Path | Description |\n|---|---|---|\n| `GET` | `/health` | Liveness and version check |\n| `POST` | `/models` | Register a monitored"
+      }
+    ]
+  },
+  {
+    "claim": "DriftWatch engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery",
+    "type": "tech",
+    "source_bullet": "Engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery, translating raw statistical drift signals into actionable operational data.",
+    "verdict": "unsupported",
+    "evidence": [
+      {
+        "chunk_id": 100,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6406,
+        "entailment": 0.0399,
+        "contradiction": 0.1301,
+        "excerpt": "From the README of repository driftwatch:\n## API Reference\n\n| Method | Path | Description |\n|---|---|---|\n| `GET` | `/health` | Liveness and version check |\n| `POST` | `/models` | Register a monitored"
+      },
+      {
+        "chunk_id": 101,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6257,
+        "entailment": 0.0153,
+        "contradiction": 0.0037,
+        "excerpt": "From the README of repository driftwatch:\n## Configuration\n\nEnvironment variables (from `.env.example`):\n\n| Variable | Default | Description |\n|---|---|---|\n| `DATABASE_URL` | `postgresql+asyncpg://dr"
+      },
+      {
+        "chunk_id": 99,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6339,
+        "entailment": 0.006,
+        "contradiction": 0.0045,
+        "excerpt": "From the README of repository driftwatch:\n## Key Concepts\n\n- Reference distribution vs production snapshot:\n  Reference data is the baseline (usually training data statistics). Production snapshots ar"
+      }
+    ]
+  },
+  {
+    "claim": "DriftWatch translated raw statistical drift signals into actionable operational data",
+    "type": "soft",
+    "source_bullet": "Engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery, translating raw statistical drift signals into actionable operational data.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "DriftWatch deployed via Docker Compose with environment-configurable thresholds and automated weekly report generation",
+    "type": "tech",
+    "source_bullet": "Deployed via Docker Compose with environment-configurable thresholds and automated weekly report generation.",
+    "verdict": "unsupported",
+    "evidence": [
+      {
+        "chunk_id": 101,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6676,
+        "entailment": 0.0998,
+        "contradiction": 0.0029,
+        "excerpt": "From the README of repository driftwatch:\n## Configuration\n\nEnvironment variables (from `.env.example`):\n\n| Variable | Default | Description |\n|---|---|---|\n| `DATABASE_URL` | `postgresql+asyncpg://dr"
+      },
+      {
+        "chunk_id": 98,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6985,
+        "entailment": 0.0424,
+        "contradiction": 0.0015,
+        "excerpt": "From the README of repository driftwatch:\n## Quick Start\n\n```bash\ngit clone https://github.com/agilap/driftwatch.git\ncd driftwatch\ncp .env.example .env\ndocker-compose up\n```\n\nAPI docs: http://localhos"
+      },
+      {
+        "chunk_id": 102,
+        "repo": "driftwatch",
+        "type": "readme",
+        "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+        "retrieval_score": 0.6781,
+        "entailment": 0.0181,
+        "contradiction": 0.0019,
+        "excerpt": "From the README of repository driftwatch:\n## Running Tests\n\n```bash\ndocker-compose run api pytest -v\n```"
+      }
+    ]
+  },
+  {
+    "claim": "CommitMap built a full-stack analytics platform that ingests 1000+ GitHub commits",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "CommitMap produces a radar-style developer 'fingerprint'",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "CommitMap produces an AI-generated narrative summary",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "CommitMap produces a shareable public card with Open Graph previews",
+    "type": "soft",
+    "source_bullet": "Built a full-stack analytics platform that ingests 1000+ GitHub commits and produces a radar-style developer 'fingerprint,' an AI-generated narrative summary, and a shareable public card with Open Graph previews.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "soft skills cannot be shown by code evidence"
+  },
+  {
+    "claim": "CommitMap implemented a React 18 + TypeScript + Vite frontend",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "CommitMap implemented a FastAPI + Celery backend",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "CommitMap implemented Supabase Auth",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "CommitMap implemented Upstash Redis caching",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "CommitMap implemented GitHub OAuth",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "CommitMap deployed on Vercel + Railway",
+    "type": "tech",
+    "source_bullet": "Implemented a React 18 + TypeScript + Vite frontend and a FastAPI + Celery backend with Supabase Auth, Upstash Redis caching, and GitHub OAuth; deployed on Vercel + Railway.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  },
+  {
+    "claim": "CommitMap optimized LLM API usage reducing cost by 98% per profile analysis",
+    "type": "quantitative",
+    "source_bullet": "Optimized LLM API usage reducing cost by 98% per profile analysis through prompt engineering and aggressive caching strategies.",
+    "verdict": "unverifiable",
+    "evidence": [],
+    "note": "quantitative claims need business/metrics evidence, not code"
+  },
+  {
+    "claim": "CommitMap optimized LLM API usage through prompt engineering and aggressive caching strategies",
+    "type": "tech",
+    "source_bullet": "Optimized LLM API usage reducing cost by 98% per profile analysis through prompt engineering and aggressive caching strategies.",
+    "verdict": "no_evidence",
+    "evidence": [],
+    "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+  }
+]

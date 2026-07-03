@@ -1,0 +1,1561 @@
+[
+  {
+    "repo": "AI.ris",
+    "type": "metadata",
+    "text": "GitHub repository AI.ris: Tetris AI. Primary language: Python. Topics: neural-network, python, reinforcement-learning. Created 2026-01-19, last pushed 2026-02-05.",
+    "url": "https://github.com/agilap/AI.ris",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 0
+  },
+  {
+    "repo": "AI.ris",
+    "type": "languages",
+    "text": "Languages in repository AI.ris by bytes of code: Python (100%).",
+    "url": "https://github.com/agilap/AI.ris",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 1
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# Tetris AI Training\n\nA Deep Reinforcement Learning agent for playing Tetris using Double DQN with Prioritized Experience Replay.",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 2
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# DEMO\n\n\nhttps://github.com/user-attachments/assets/4d2e6307-741a-4b01-8a06-43ec002714e8",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 3
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n## Attribution\n\nThis implementation is based on:\n- **[truonging/Tetris-A.I (Version2)](https://github.com/truonging/Tetris-A.I)** - Double DQN Tetris implementation",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 4
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### What's the Same\n- **Core Algorithm**: Double DQN with heap-based Prioritized Experience Replay\n- **State Representation**: 6-feature state (heights, bumpiness, holes, lines, y_pos, pillars)\n- **Network Architecture**: Simple MLP [32, 32, 32] hidden layers\n- **Training Schedule**: Train every 200 steps, target update every 1000 steps\n- **State Enumeration**: Numba JIT `calc_all_states()` for fast position computation",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 5
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### What's Different\n| Aspect | Reference | This Implementation |\n|--------|-----------|---------------------|\n| **Loss Function** | `SmoothL1Loss` (Huber) | `MSELoss` |\n| **Priority Storage** | Positive priorities | Negative priorities (max-heap via min-heap) |\n| **PER Sampling** | `probabilities ** beta` | Direct priority-weighted sampling |\n| **Priority Update** | Per-index tuple replacement | Full heap rebuild (less efficient) |\n| **Importance Weights** | `(1/N * 1/P)^beta` | `(N * P)^(-beta)` |",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 6
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### Loss Function Note\nThe reference uses `SmoothL1Loss` (Huber loss) which is more robust to outliers. This implementation uses `MSELoss`. Both work well for this task.",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 7
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### Double DQN with Heap-based PER\n\nFollowing the reference implementation:\n- **Network**: Simple feedforward MLP [32, 32, 32] hidden layers\n- **Training**: Double DQN (action selection with online network, evaluation with target network)\n- **Memory**: Heap-based Prioritized Experience Replay\n- **Target Updates**: Hard copy every 1000 steps\n- **Training Schedule**: Train every 200 steps",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 8
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### State Features (6 values)\n1. **Total Height** - Sum of all column heights\n2. **Bumpiness** - Sum of height differences between adjacent columns\n3. **Lines Cleared** - Lines cleared by this move\n4. **Holes** - Empty cells with blocks above\n5. **Y Position** - Row where piece landed (normalized)\n6. **Pillars** - Deep wells (\u22653 depth) that trap pieces",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 9
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### Scoring (NES Tetris)\n| Lines Cleared | Base Points |\n|---------------|-------------|\n| 1 line        | 40          |\n| 2 lines       | 100         |\n| 3 lines       | 300         |\n| 4 lines (Tetris) | 1200     |\n\nScore = base_points \u00d7 level, where level = total_lines // 10 + 1",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 10
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### Hyperparameters\n| Parameter | Value | Description |\n|-----------|-------|-------------|\n| Network | [32, 32, 32] | Hidden layer sizes |\n| Learning Rate | 0.01 | Adam optimizer |\n| Discount (\u03b3) | 0.999 | Future reward weight |\n| Epsilon | 0.3 \u2192 0.01 | Polynomial decay over games |\n| Batch Size | 128 | Training batch |\n| Memory | 10,000 | Replay buffer size |\n| Train Every | 200 steps | Training frequency |\n| Target Update | 1000 steps | Hard copy interval |",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 11
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n## Results\n\nTraining achieves excellent performance:\n- **Best Score**: 5,650,660+ points\n- **Best Lines**: 1,292 lines in a single game\n- **Training Time**: ~10 minutes for 1500 games",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 12
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n## Installation\n\n```bash\ngit clone https://github.com/yourusername/TetrisBattleArena.git\ncd TetrisBattleArena",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 13
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# Create virtual environment\npython3 -m venv venv\nsource venv/bin/activate",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 14
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# Install dependencies\npip install torch numpy pygame numba\n```",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 15
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# Train without visualization (faster)\npython train.py --games 5000",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 16
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# Train with visualization\npython train.py --render --games 2000",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 17
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n# Load existing model and continue training\npython train.py --render --load --games 1000\n```",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 18
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### Visualization Controls\n\n| Key | Action |\n|-----|--------|\n| **SPACE** | Pause/unpause |\n| **UP/DOWN** | Adjust speed (MAX \u2192 60/s \u2192 30/s \u2192 15/s \u2192 5/s \u2192 1/s) |\n| **ESC** | Save and exit |",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 19
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n### Genetic Algorithm (Optional)\n\nEvolve reward weights:\n```bash\npython genetic_algo.py\n```\n\nSaves optimized weights to `data/best_weights.json`.",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 20
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n## File Structure\n\n```\nTetrisBattleArena/\n\u251c\u2500\u2500 settings.py           # Tetrominos, Numba JIT functions, hyperparameters\n\u251c\u2500\u2500 tetris.py             # Game environment with calc_all_states()\n\u251c\u2500\u2500 agent.py              # Agent with heap-based PER\n\u251c\u2500\u2500 model.py              # Linear_QNet, QTrainer (Double DQN)\n\u251c\u2500\u2500 train.py              # Training loop with visualization\n\u251c\u2500\u2500 genetic_algo.py       # GA for reward weight tuning\n\u251c\u2500\u2500 data/\n\u2502   \u2514\u2500\u2500 best_weights.json # Evolved reward weights\n\u2514\u2500\u2500 model/\n    \u2514\u2500\u2500 best_model.pth    # Saved checkpoint\n```",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 21
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n## How It Works\n\n1. **State Enumeration**: For each piece, `calc_all_states()` (Numba JIT) computes all possible final positions and their resulting board states\n2. **Action Selection**: Agent evaluates Q-values for all possible states and picks the best (or random with \u03b5 probability)\n3. **Reward Calculation**: Uses evolved weights to compute reward based on state features\n4. **Experience Replay**: Stores (state, next_state, reward, done) in prioritized heap\n5. **Training**: Every 200 steps, samples batch weighted by TD-error priority\n6. **Target Network**: Hard-copied every 1000 steps for stable Q-targets",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 22
+  },
+  {
+    "repo": "AI.ris",
+    "type": "readme",
+    "text": "From the README of repository AI.ris:\n## References\n\n- [truonging/Tetris-A.I](https://github.com/truonging/Tetris-A.I) - Reference implementation",
+    "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 23
+  },
+  {
+    "repo": "AI.ris",
+    "type": "commits",
+    "text": "Contributor agilap has 12 commits in repository AI.ris.",
+    "url": "https://github.com/agilap/AI.ris",
+    "date": "2026-02-05T03:39:30Z",
+    "id": 24
+  },
+  {
+    "repo": "Algos",
+    "type": "metadata",
+    "text": "GitHub repository Algos: Algo review . Primary language: Python. Topics: none. Created 2026-02-02, last pushed 2026-02-04.",
+    "url": "https://github.com/agilap/Algos",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 25
+  },
+  {
+    "repo": "Algos",
+    "type": "languages",
+    "text": "Languages in repository Algos by bytes of code: Python (100%).",
+    "url": "https://github.com/agilap/Algos",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 26
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n# Algos\nReview algorithms with one project at a time.",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 27
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n## Project 1 (Cache & Memory Simulator)\n\nStart here:\n- project1_cache_simulator/README.md\n- project1_cache_simulator/docs/what_is_a_cache.md",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 28
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n## Project 1 structure\n\n```\nalgo-systems/\n\tproject2_cache_simulator/\n\t\tsrc/\n\t\ttests/\n\t\tdocs/\n```",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 29
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n## Project 1 goals\n- Build a cache interface\n- Implement LRU and LFU\n- Run workloads and compare\n- Write short notes about tradeoffs",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 30
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n## Current Focus: Project 2 (Mini Search Engine)\n\nStart here:\n- project2_search_engine/README.md\n- project2_search_engine/docs/what_is_search.md",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 31
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n## Project 2 structure\n\n```\nalgo-systems/\n\tproject1_cache_simulator/\n\tproject2_search_engine/\n\t\tsrc/\n\t\ttests/\n\t\tdocs/\n```",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 32
+  },
+  {
+    "repo": "Algos",
+    "type": "readme",
+    "text": "From the README of repository Algos:\n## Project 2 goals\n- Learn to read text and turn it into tokens (clean words).\n- Map each token to the documents that contain it.\n- Return documents that match a query and rank by TF.\n- Suggest words that start with a prefix.",
+    "url": "https://github.com/agilap/Algos/blob/main/README.md",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 33
+  },
+  {
+    "repo": "Algos",
+    "type": "commits",
+    "text": "Contributor agilap has 12 commits in repository Algos.",
+    "url": "https://github.com/agilap/Algos",
+    "date": "2026-02-04T15:12:41Z",
+    "id": 34
+  },
+  {
+    "repo": "ISAAC",
+    "type": "metadata",
+    "text": "GitHub repository ISAAC: Intelligent Systems for Analyzing, Archiving, and Creating ideas. Primary language: Python. Topics: none. Created 2026-04-25, last pushed 2026-05-02.",
+    "url": "https://github.com/agilap/ISAAC",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 35
+  },
+  {
+    "repo": "ISAAC",
+    "type": "languages",
+    "text": "Languages in repository ISAAC by bytes of code: Python (100%).",
+    "url": "https://github.com/agilap/ISAAC",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 36
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n# ISAAC\n\n**Intelligent System for Archiving, Analysis, and Creating**\n\nISAAC is the local-first bridge between an LLM and your Obsidian vault. Obsidian stays the source of truth; ISAAC sits in the middle as the broker that indexes notes, retrieves relevant memory, compares new ideas against prior work, scores candidates, and writes structured notes back safely.\n\nThe product name is **ISAAC**. The Python package, distribution, and CLI intentionally use `isaac_vault` / `isaac-vault` because the plain `isaac` package/command name is already occupied in the Python ecosystem.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 37
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## What ISAAC does\n\n- **Connects LLM hosts to Obsidian** through an explicit bridge protocol and MCP tools.\n- **Indexes Markdown vaults incrementally** using content hashes, frontmatter, section-aware chunks, and local embeddings.\n- **Searches notes with hybrid retrieval** by combining vector similarity with lexical matching.\n- **Compares new ideas with citations** so overlap claims point back to specific notes and chunks.\n- **Builds LLM-ready context packets and briefs** that combine relevant notes, technologies, idea matches, compare evidence, and write policy.\n- **Scores ideas without fake precision** using anchored bands for novelty, build cost, personal fit, and overlap.\n- **Writes notes back safely** with templates, atomic writes, `isaac_hash` idempotency, and conflict detection.\n- **Runs headless** through a CLI and an MCP stdio server; no web UI or dashboard is required.\n\nThe intended product loop is:\n\n```text\nLLM host \u21c4 ISAAC \u21c4 Obsidian vault\n```\n\nThe LLM should ask ISAAC for context before answering, comparing, or writing. ISAAC returns vault-grounded evidence and safe write instructions; Obsidian remains the human-readable knowledge base.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 38
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Repository status\n\nCurrent implementation package: `isaac_vault`  \nCurrent release line: **v0.4.0**  \nCurrent CLI command: `isaac-vault`  \nDefault index database: `<vault>/.isaac/isaac.db`\n\nImplemented surfaces include:\n\n- `init`\n- `doctor`\n- `index` / `index --watch`\n- `search`\n- `compare`\n- `context`\n- `brief`\n- `protocol`\n- `score`\n- `shortlist`\n- `stats`\n- `list`\n- `promote`\n- `serve` for MCP stdio tools:\n  - `vault.search`\n  - `vault.compare`\n  - `vault.context`\n  - `vault.brief`\n  - `vault.protocol`\n  - `vault.score`\n  - `vault.shortlist`\n  - `vault.list_notes`\n  - `vault.promote_idea`\n  - `vault.write_note`\n  - `vault.stats`\n\nSee [`ARCHITECTURE.md`](ARCHITECTURE.md) for the system design and v1 boundaries.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 39
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Requirements\n\n- Python **3.11+**\n- [`uv`](https://docs.astral.sh/uv/)\n- A local Markdown/Obsidian vault to index\n\nISAAC defaults to local `sentence-transformers` embeddings with `BAAI/bge-small-en-v1.5`. For smoke tests, demos, CI, or offline setup, use the deterministic hash embedder instead.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 40
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Setup\n\n```bash\nuv sync\nuv run isaac-vault --help\n```\n\nScaffold a vault for first use:\n\n```bash\nuv run isaac-vault init /path/to/your/vault\nuv run isaac-vault doctor /path/to/your/vault\n```\n\nOptional fast/offline mode:\n\n```bash\nexport ISAAC_EMBEDDING_PROVIDER=deterministic\n```\n\nOptional custom local embedding model:\n\n```bash\nexport ISAAC_EMBEDDING_MODEL=\"BAAI/bge-small-en-v1.5\"\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 41
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Quick start\n\nUse deterministic embeddings first if you want a no-download smoke test:\n\n```bash\nuv run isaac-vault index /path/to/your/vault --deterministic-embedder\nuv run isaac-vault context \"flood evacuation dashboard\" /path/to/your/vault --deterministic-embedder\nuv run isaac-vault brief \"flood evacuation dashboard\" /path/to/your/vault --deterministic-embedder\nuv run isaac-vault search \"flood evacuation dashboard\" /path/to/your/vault --deterministic-embedder\nuv run isaac-vault compare \"A dashboard for typhoon evacuation planning\" /path/to/your/vault --deterministic-embedder\nuv run isaac-vault score \"A local-first idea memory for my projects\" /path/to/your/vault --deterministic-embedder\nuv run isaac-vault stats /path/to/your/vault\n```\n\nFor production-quality semantic retrieval, omit `--deterministic-embedder` and allow the configured `sentence-transformers` model to load locally:\n\n```bash\nuv run isaac-vault index /path/to/your/vault\nuv run isaac-vault search \"agent memory for project ideas\" /path/to/your/vault\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 42
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Initialize and diagnose a vault\n\nCreate ISAAC's recommended folders plus vault-local starter files under `.isaac/`:\n\n```bash\nuv run isaac-vault init /path/to/vault\n```\n\nThis scaffolds:\n\n- `Ideas/`\n- `Projects/`\n- `Technologies/`\n- `Sources/`\n- `.isaac/config.toml`\n- `.isaac/templates/idea.md`\n- `.isaac/.gitignore`\n\nRun diagnostics without mutating the vault:\n\n```bash\nuv run isaac-vault doctor /path/to/vault\n```\n\nUse an embedding smoke test when you want to verify the configured model can actually load:\n\n```bash\nuv run isaac-vault doctor /path/to/vault --check-embedding-load\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 43
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Index a vault\n\n```bash\nuv run isaac-vault index /path/to/vault\n```\n\nUseful options:\n\n```bash\nuv run isaac-vault index /path/to/vault --db /tmp/isaac.db\nuv run isaac-vault index /path/to/vault --full\nuv run isaac-vault index /path/to/vault --watch --watch-debounce 0.25\nuv run isaac-vault index /path/to/vault --deterministic-embedder\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 44
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Search indexed notes\n\n```bash\nuv run isaac-vault search \"portfolio project notes\" /path/to/vault --k 10\n```\n\nFilter by frontmatter:\n\n```bash\nuv run isaac-vault search \"flood maps\" /path/to/vault --status exploring --type idea --tag disaster-ai\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 45
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Compare a new idea\n\n```bash\nuv run isaac-vault compare \"A coding agent that reads old project notes before proposing new builds\" /path/to/vault\n```\n\n`compare` returns a structured JSON report with:\n\n- overlap verdict (`low`, `medium`, or `high`)\n- cited hits\n- retrieved chunks\n- a `what_is_new` summary\n- a citation-grounded `judgment` that separates duplicate, adjacent, enabling-technology, related-context, and insufficient-evidence cases\n- in MCP mode, a host reasoning prompt for final host-side synthesis",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 46
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Build an LLM context packet\n\n```bash\nuv run isaac-vault context \"Can neural operators help flood nowcasting?\" /path/to/vault --intent research\n```\n\n`context` is the main \u201cmiddleman\u201d surface. It returns a host-ready packet with:\n\n- the ISAAC bridge protocol version\n- an answer-ready brief\n- instructions for the LLM host\n- relevant vault notes\n- relevant technology notes\n- relevant idea notes\n- optional cited compare evidence\n- write-back policy for Obsidian\n\nSupported intents:\n\n```bash\nuv run isaac-vault context \"new project idea\" /path/to/vault --intent compare\nuv run isaac-vault context \"capture this idea\" /path/to/vault --intent write\nuv run isaac-vault context \"promote TinyTriage\" /path/to/vault --intent promote\nuv run isaac-vault context \"neural operators\" /path/to/vault --intent research\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 47
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Build a compact answer-ready brief\n\n```bash\nuv run isaac-vault brief \"Can neural operators help flood nowcasting?\" /path/to/vault --intent research\n```\n\n`brief` is the compact layer a host LLM should read first. It returns:\n\n- a concise summary\n- answer guidance\n- technology context\n- application/idea context\n- citations\n- suggested next ISAAC tools",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 48
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Show the LLM bridge protocol\n\n```bash\nuv run isaac-vault protocol /path/to/vault\n```\n\n`protocol` returns static instructions a host model can load before using ISAAC:\n\n- Obsidian is the source of truth.\n- ISAAC is the broker for retrieval, compare, and write-back.\n- Search/compare before claiming novelty.\n- Cite retrieved vault passages.\n- Use `vault.write_note` / `vault.promote_idea` instead of raw filesystem writes when possible.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 49
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Score an idea\n\n```bash\nuv run isaac-vault score \"A local MCP server for idea recall\" /path/to/vault\n```\n\nRank candidates against each other:\n\n```bash\nuv run isaac-vault score \"ignored when candidates are supplied\" /path/to/vault \\\n  --candidate \"Project memory MCP server\" \\\n  --candidate \"Ceramic glaze notebook\"\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 50
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Shortlist unreviewed ideas\n\n```bash\nuv run isaac-vault shortlist /path/to/vault --top 10\n```\n\n`shortlist` reviews indexed notes with `type: idea` and `status: unreviewed`, compares each idea against the existing vault while excluding itself, and returns a ranked decision report:\n\n- recommended action: `promote`, `keep`, `merge`, `research-more`, or `archive`\n- overlap/novelty/build-cost bands\n- ISAAC relevance\n- portfolio value\n- linked technologies\n- cited related notes\n\nWrite a Markdown review note back into the vault:\n\n```bash\nuv run isaac-vault shortlist /path/to/vault \\\n  --top 10 \\\n  --write-report \\\n  --report-folder \"01 Ideas/Reviews\"\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 51
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### List indexed notes\n\n```bash\nuv run isaac-vault list /path/to/vault --type technology\nuv run isaac-vault list /path/to/vault --status unreviewed\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 52
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Promote an unreviewed idea\n\nDry-run first:\n\n```bash\nuv run isaac-vault promote \"TinyTriage\" /path/to/vault --folder \"02 Projects\" --dry-run\n```\n\nWrite when the rendered output looks right:\n\n```bash\nuv run isaac-vault promote \"TinyTriage\" /path/to/vault --folder \"02 Projects\"\n```\n\nPromotion keeps the source idea note in place, writes an idempotent project note, records `source_idea`, and returns `noop` if the same promotion is repeated.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 53
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Show stats and lint\n\n```bash\nuv run isaac-vault stats /path/to/vault\n```\n\nStats include note/chunk counts, lint issues, type/status counts, and the database path.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 54
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n### Run the MCP server\n\n```bash\nuv run isaac-vault serve /path/to/vault\n```\n\nOptional explicit database path:\n\n```bash\nuv run isaac-vault serve /path/to/vault --db /path/to/vault/.isaac/isaac.db\n```\n\nEnvironment variables recognized by the runtime:\n\n| Variable | Purpose |\n| --- | --- |\n| `ISAAC_VAULT_PATH` | Default vault path for MCP/runtime configuration |\n| `ISAAC_DB_PATH` | Explicit SQLite index path |\n| `ISAAC_EMBEDDING_PROVIDER` | `sentence-transformers` or `deterministic` |\n| `ISAAC_EMBEDDING_MODEL` | Local sentence-transformers model name |\n| `ISAAC_IDEAS_FOLDER` | Default write folder for new ideas |\n| `ISAAC_PROJECTS_FOLDER` | Default destination for promoted projects |\n| `ISAAC_TECHNOLOGIES_FOLDER` | Convention path for technology/research notes |\n| `ISAAC_SOURCES_FOLDER` | Convention path for source/archive notes |\n\n`isaac-vault init` also writes a starter `.isaac/config.toml` documenting these defaults. Runtime behavior currently remains environment/CLI driven, so the config file is a human-editable convention marker rather than a required input.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 55
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Codex, Obsidian, and ISAAC\n\nLocal Codex filesystem access and ISAAC are separate. Codex can read/write an Obsidian vault directly when the local session has filesystem permission, but that is raw file access. ISAAC is the intentional middleman: it indexes the Markdown vault, stores searchable metadata/embeddings in SQLite, exposes CLI/MCP tools over that index, and returns LLM-ready context packets so the host model can reason from vault evidence instead of guessing.\n\nUse this mental model:\n\n```text\nObsidian = source of truth and human editor\nISAAC    = retrieval, compare, protocol, and safe write-back broker\nLLM host = reasoning and conversation layer\n```\n\nFor LLM integrations, start with `vault.protocol` once per session and `vault.context` or `vault.brief` for each user question or candidate idea. Then call narrower tools (`vault.search`, `vault.compare`, `vault.write_note`, `vault.promote_idea`) as needed.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 56
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Vault conventions\n\nISAAC indexes Markdown files under the vault root and skips common non-content paths such as `.git`, `.obsidian`, `.trash`, `node_modules`, template folders, and daily-note filenames.\n\nRecommended frontmatter:\n\n```yaml\n---\ntitle: Project NOAH Flood Map\ntype: idea\nstatus: exploring\ntags: [disaster-ai, maps]\n---\n```\n\nImportant behavior:\n\n- `type` and `status` are linted when missing.\n- Frontmatter wins over folder location for note metadata.\n- Notes marked with `template: true` are skipped.\n- Very large notes are truncated for indexing to keep sync bounded.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 57
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Note write-back\n\n`vault.write_note` and the engine writer create Markdown notes with the default idea template at:\n\n```text\nisaac_vault/writer/templates/idea.md\n```\n\nWrite-back is designed to be safe:\n\n- generated filenames are conservative slugs\n- writes are atomic\n- duplicate content returns `noop`\n- existing different content returns `conflict`\n- each generated note records an `isaac_hash`\n\nDefault write folder: `Ideas/`, or `ISAAC_IDEAS_FOLDER` when using the engine/CLI runtime.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 58
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Evaluation and development\n\nRun the deterministic retrieval/compare eval suite:\n\n```bash\nuv run python -m isaac_vault.eval.runner --json\n```\n\nValidate a real local vault without mutating it:\n\n```bash\nuv run python scripts/validate_vault.py /path/to/vault --deterministic\n```\n\nRun quality checks:\n\n```bash\nuv run ruff check .\nuv run mypy isaac_vault tests\nuv run pytest\n```\n\nBuild distributions:\n\n```bash\nuv build\n```",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 59
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Implementation notes\n\n- Storage is SQLite in one file for easy backup and inspection.\n- ISAAC uses `sqlite-vec` virtual tables when available and falls back to portable JSON vector tables when the extension cannot be loaded.\n- Indexing uses normalized Markdown content hashes, so restored files and misleading mtimes do not silently corrupt sync state.\n- Watch mode performs an initial sync, then debounces Markdown filesystem bursts before re-syncing.\n- The deterministic embedder is intentionally not semantic; it exists for repeatable tests and offline plumbing checks.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 60
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## Release milestones\n\n- **v0.1.0:** local-first package, indexing, hybrid retrieval, compare, stats, watch mode, deterministic embeddings, and MCP tools.\n- **v0.2.0:** vault taxonomy config, note listing, idea promotion, typed compare reports, and real-vault validation.\n- **v0.3.0:** ISAAC bridge protocol, context packets, and host-facing workflow guidance.\n- **v0.4.0:** answer-ready briefs and citation-grounded compare judgments.\n\nNear-term candidates:\n\n- first-run `init` and local `doctor` release alignment\n- stronger vault lint/fix workflow\n- expanded real-vault evaluation cases",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 61
+  },
+  {
+    "repo": "ISAAC",
+    "type": "readme",
+    "text": "From the README of repository ISAAC:\n## License\n\nMIT. See [LICENSE](LICENSE).",
+    "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 62
+  },
+  {
+    "repo": "ISAAC",
+    "type": "dependencies",
+    "text": "The dependency file pyproject.toml in repository ISAAC shows which libraries the project uses. ISAAC uses the bm25s package. ISAAC uses the markdown-it-py package. ISAAC uses the mcp package. ISAAC uses the python-frontmatter package. ISAAC uses the sentence-transformers package. ISAAC uses the sqlite-vec package. ISAAC uses the typer package. ISAAC uses the watchdog package. ISAAC uses the xxhash package.",
+    "url": "https://github.com/agilap/ISAAC/blob/main/pyproject.toml",
+    "date": "2026-05-02T00:29:26Z",
+    "packages": [
+      "bm25s",
+      "markdown-it-py",
+      "mcp",
+      "python-frontmatter",
+      "sentence-transformers",
+      "sqlite-vec",
+      "typer",
+      "watchdog",
+      "xxhash"
+    ],
+    "id": 63
+  },
+  {
+    "repo": "ISAAC",
+    "type": "commits",
+    "text": "Contributor agilap has 14 commits in repository ISAAC.",
+    "url": "https://github.com/agilap/ISAAC",
+    "date": "2026-05-02T00:29:26Z",
+    "id": 64
+  },
+  {
+    "repo": "Veritas",
+    "type": "metadata",
+    "text": "GitHub repository Veritas: Internet posts truth checker. Primary language: Python. Topics: none. Created 2026-03-02, last pushed 2026-03-28.",
+    "url": "https://github.com/agilap/Veritas",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 65
+  },
+  {
+    "repo": "Veritas",
+    "type": "languages",
+    "text": "Languages in repository Veritas by bytes of code: Python (91%), Jupyter Notebook (8%).",
+    "url": "https://github.com/agilap/Veritas",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 66
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n---\ntitle: TruthScan\nemoji: \ud83d\udd0d\ncolorFrom: red\ncolorTo: blue\nsdk: gradio\nsdk_version: \"4.20.0\"\napp_file: app.py\npinned: false\nlicense: mit\nshort_description: Social Media Fake Post Detector \u2014 paste a URL, get the truth\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 67
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n# \ud83d\udd0d TruthScan \u2014 Social Media Fake Post Detector\n\n> Paste a social media post URL \u2192 TruthScan scrapes the caption + media \u2192 checks if the caption matches the visual content AND if the text itself is credible.\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 68
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n## Supported Platforms\n\n| Platform | URL Format | API Needed? |\n|----------|-----------|-------------|\n| Instagram | `instagram.com/p/SHORTCODE/` or `instagram.com/reel/SHORTCODE/` | \u274c None (public posts) |\n| Facebook | `facebook.com/page/posts/ID` | \u274c None (public posts) |\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 69
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n## Architecture\n\n```\nPost URL\n   \u2502\n   \u25bc\nLayer 0: URL Fetcher\n   \u251c\u2500 detect_platform()     \u2014 Instagram / Facebook\n   \u251c\u2500 scrape post           \u2014 caption text + media URLs\n   \u2514\u2500 download_media()      \u2014 save image/video to temp file\n   \u2502\n   \u251c\u2500\u25ba Layer 1: DistilBERT      \u2014 text credibility (LIAR dataset)\n   \u251c\u2500\u25ba Layer 2: CLIP ViT-B/32   \u2014 caption \u2194 image cosine similarity\n   \u251c\u2500\u25ba Layer 3: OpenCV + CLIP   \u2014 caption \u2194 video (keyframe analysis)\n   \u251c\u2500\u25ba Layer 4: Wiki + GNews    \u2014 source cross-reference\n   \u2514\u2500\u25ba Layer 5: TinyLlama-1.1B  \u2014 plain-English verdict\n```\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 70
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n### 1. Clone and install\n\n```bash\ngit clone https://github.com/agilap/truthscan\ncd truthscan\npip install -r requirements.txt\n```",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 71
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n### 2. Configure API keys\n\n```bash\ncp .env.example .env",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 72
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n# Then edit .env \u2014 add your GNews API key for Layer 4\n```\n\n**How to get each key:**\n\n**GNews API key (Layer 4 \u2014 optional):**\n1. Sign up at https://gnews.io (free tier = 100 req/day)\n2. Copy your API key from the dashboard\n\n**Facebook cookies (optional \u2014 only for non-public posts):**\n1. Install \"EditThisCookie\" browser extension\n2. Log into Facebook \u2192 export cookies as JSON\n3. Set `FACEBOOK_COOKIES_FILE=/path/to/cookies.json` in .env",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 73
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n### 3. Train Layer 1 \u2014 one-time, ~10 min on a free Colab T4\n\nOpen `train.ipynb` in Google Colab and run all cells. This downloads the LIAR dataset from HuggingFace, fine-tunes DistilBERT, and saves the checkpoint to `./models/liar_distilbert/`.\n\n> **Skip training?** App still works \u2014 Layer 1 scores are random until trained, but Layers 0, 2\u20135 are fully functional.",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 74
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n# Opens at http://localhost:7860\n```\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 75
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n## Deploy to HuggingFace Spaces\n\n```bash",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 76
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n# 1. Create a Gradio Space at https://huggingface.co/spaces",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 77
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n#    GNEWS_API_KEY\n\ngit remote add space https://huggingface.co/spaces/agilap/truthscan\ngit push space main\n```\n\nTo include the trained model:\n```bash\ngit lfs install\ngit lfs track \"models/**\"\ngit add models/ .gitattributes\ngit commit -m \"add trained DistilBERT\"\ngit push space main\n```\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 78
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n## File Structure\n\n```\ntruthscan/\n\u251c\u2500\u2500 app.py                      # Gradio UI \u2014 URL input, streaming results\n\u251c\u2500\u2500 train.ipynb                 # DistilBERT training notebook (for Google Colab)\n\u251c\u2500\u2500 requirements.txt\n\u251c\u2500\u2500 .env.example\n\u251c\u2500\u2500 url_fetcher.py              # Layer 0: URL \u2192 PostData (caption + media)\n\u251c\u2500\u2500 text_classifier.py          # Layer 1: DistilBERT on LIAR dataset\n\u251c\u2500\u2500 clip_checker.py             # Layer 2: CLIP caption \u2194 image\n\u251c\u2500\u2500 video_checker.py            # Layer 3: CLIP caption \u2194 video keyframes\n\u251c\u2500\u2500 source_checker.py           # Layer 4: Wikipedia / GNews\n\u2514\u2500\u2500 verdict.py                  # Layer 5: TinyLlama plain-English verdict\n```\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 79
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n## Known Limitations\n\n- **Instagram:** Instaloader may be throttled on heavily scraped IPs; works well on HF Spaces\n- **Facebook:** Public posts scrape cleanly; friends-only or private posts require cookie auth\n- **CLIP thresholds:** Calibrated on MS-COCO \u2014 may need tuning for social media imagery\n- **TinyLlama:** Small model, occasional hallucinations \u2014 treat verdict as a signal, not ground truth\n\n---",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 80
+  },
+  {
+    "repo": "Veritas",
+    "type": "readme",
+    "text": "From the README of repository Veritas:\n## License\n\nMIT \u2014 use freely, credit appreciated.",
+    "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 81
+  },
+  {
+    "repo": "Veritas",
+    "type": "dependencies",
+    "text": "The dependency file requirements.txt in repository Veritas shows which libraries the project uses. Veritas uses the accelerate package. Veritas uses the beautifulsoup4 package. Veritas uses the bitsandbytes package. Veritas uses the datasets package. Veritas uses the gradio package. Veritas uses the open-clip-torch package. Veritas uses the opencv-python package. Veritas uses the peft package. Veritas uses the pillow package. Veritas uses the python-dotenv package. Veritas uses the requests package. Veritas uses the scikit-learn package. Veritas uses the tavily-python package. Veritas uses the torch package. Veritas uses the transformers package.",
+    "url": "https://github.com/agilap/Veritas/blob/main/requirements.txt",
+    "date": "2026-03-28T00:43:53Z",
+    "packages": [
+      "accelerate",
+      "beautifulsoup4",
+      "bitsandbytes",
+      "datasets",
+      "gradio",
+      "open-clip-torch",
+      "opencv-python",
+      "peft",
+      "pillow",
+      "python-dotenv",
+      "requests",
+      "scikit-learn",
+      "tavily-python",
+      "torch",
+      "transformers"
+    ],
+    "id": 82
+  },
+  {
+    "repo": "Veritas",
+    "type": "commits",
+    "text": "Contributor agilap has 22 commits in repository Veritas.",
+    "url": "https://github.com/agilap/Veritas",
+    "date": "2026-03-28T00:43:53Z",
+    "id": 83
+  },
+  {
+    "repo": "clarion",
+    "type": "metadata",
+    "text": "GitHub repository clarion: no description. Primary language: Python. Topics: none. Created 2026-03-25, last pushed 2026-04-19.",
+    "url": "https://github.com/agilap/clarion",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 84
+  },
+  {
+    "repo": "clarion",
+    "type": "languages",
+    "text": "Languages in repository clarion by bytes of code: Python (100%).",
+    "url": "https://github.com/agilap/clarion",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 85
+  },
+  {
+    "repo": "clarion",
+    "type": "readme",
+    "text": "From the README of repository clarion:\n# Clarion\n\nClarion is an async meeting intelligence pipeline that transcribes meetings, extracts decisions and action items, retrieves prior context, and exports a report.",
+    "url": "https://github.com/agilap/clarion/blob/main/README.md",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 86
+  },
+  {
+    "repo": "clarion",
+    "type": "readme",
+    "text": "From the README of repository clarion:\n## Prerequisites\n\n- Python 3.10+\n- ffmpeg (required by Whisper audio decoding)\n- Supabase account (project + Postgres connection strings)\n- OpenAI API key",
+    "url": "https://github.com/agilap/clarion/blob/main/README.md",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 87
+  },
+  {
+    "repo": "clarion",
+    "type": "readme",
+    "text": "From the README of repository clarion:\n## Setup and Run\n\n1. Clone the repository and move into it.\n2. Install dependencies:\n\n```bash\npip install -r requirements.txt\n```\n\n3. Create your local env file:\n\n```bash\ncp .env.example .env\n```\n\n4. Fill in `.env` values for:\n\n- OPENAI_API_KEY\n- DATABASE_URL\n- DATABASE_DIRECT_URL\n- CHROMA_PATH\n- WHISPER_MODEL\n- POOL_MIN\n- POOL_MAX\n\n5. Initialize schema:\n\n```bash\npython db.py\n```\n\n6. Start the app:\n\n```bash\npython main.py\n```",
+    "url": "https://github.com/agilap/clarion/blob/main/README.md",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 88
+  },
+  {
+    "repo": "clarion",
+    "type": "readme",
+    "text": "From the README of repository clarion:\n## AMI Corpus (Demo Data)\n\n- Corpus home: https://groups.inf.ed.ac.uk/ami/corpus/\n- Download page: https://groups.inf.ed.ac.uk/ami/download\n- Suggested session for demo: ES2002a\n- Example ES2002a audio (headset mix): https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2002a/audio/ES2002a.Mix-Headset.wav\n\nTo seed prior decisions for brief retrieval, process at least 3 meeting wav files:\n\n```bash\npython seed.py path/to/meeting1.wav path/to/meeting2.wav path/to/meeting3.wav --topic \"project planning\"\n```",
+    "url": "https://github.com/agilap/clarion/blob/main/README.md",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 89
+  },
+  {
+    "repo": "clarion",
+    "type": "readme",
+    "text": "From the README of repository clarion:\n## Demo Flow\n\n1. Upload an audio file in the UI.\n2. Watch status stream through stages.\n3. See pre-meeting brief appear (when prior data exists for topic).\n4. Review decisions, action items, and follow-up questions.\n5. Download the generated markdown report.",
+    "url": "https://github.com/agilap/clarion/blob/main/README.md",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 90
+  },
+  {
+    "repo": "clarion",
+    "type": "readme",
+    "text": "From the README of repository clarion:\n## File Map\n\n- `main.py`: Gradio UI and streaming output wiring.\n- `queue.py`: End-to-end async pipeline orchestration.\n- `retrieval.py`: Transcription, cleanup, topic extraction, embedding, vector retrieval.\n- `reasoning.py`: Prompt chain for classification, actions, summary, follow-ups.\n- `action.py`: Database writes, duplicate filtering, pre-meeting brief, report export.\n- `db.py`: Supabase connection pool and schema initialization.\n- `cache.py`: Embedding cache helpers using Supabase.\n- `retry.py`: Async retry decorator and shared OpenAI helpers.\n- `config.py`: Environment variable loading and config constants.\n- `seed.py`: Sequential batch processor for seeding demo meetings.\n- `requirements.txt`: Python dependency list.\n- `.env.example`: Documented environment variable template.\n- `architecture.md`: System architecture and data flow.\n- `copilot.md`: Build constraints and implementation responsibilities.\n- `prompts.md`: Prompt library for each model call.\n- `states.md`: Project milestone states and current checkpoint.\n- `docs/`: Copies of architecture, prompts, states, and copilot docs.",
+    "url": "https://github.com/agilap/clarion/blob/main/README.md",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 91
+  },
+  {
+    "repo": "clarion",
+    "type": "dependencies",
+    "text": "The dependency file requirements.txt in repository clarion shows which libraries the project uses. clarion uses the chromadb package. clarion uses the gradio package. clarion uses the openai package. clarion uses the openai-whisper package. clarion uses the psycopg2-binary package. clarion uses the python-docx package. clarion uses the python-dotenv package.",
+    "url": "https://github.com/agilap/clarion/blob/main/requirements.txt",
+    "date": "2026-04-19T00:10:38Z",
+    "packages": [
+      "chromadb",
+      "gradio",
+      "openai",
+      "openai-whisper",
+      "psycopg2-binary",
+      "python-docx",
+      "python-dotenv"
+    ],
+    "id": 92
+  },
+  {
+    "repo": "clarion",
+    "type": "commits",
+    "text": "Contributor agilap has 11 commits in repository clarion.",
+    "url": "https://github.com/agilap/clarion",
+    "date": "2026-04-19T00:10:38Z",
+    "id": 93
+  },
+  {
+    "repo": "driftwatch",
+    "type": "metadata",
+    "text": "GitHub repository driftwatch: no description. Primary language: Python. Topics: none. Created 2026-03-27, last pushed 2026-03-27.",
+    "url": "https://github.com/agilap/driftwatch",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 94
+  },
+  {
+    "repo": "driftwatch",
+    "type": "languages",
+    "text": "Languages in repository driftwatch by bytes of code: Python (99%), Mako (0%), Dockerfile (0%).",
+    "url": "https://github.com/agilap/driftwatch",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 95
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n# DriftWatch\n\n![CI](https://github.com/agilap/driftwatch/actions/workflows/ci.yml/badge.svg)\n\nProduction model health monitor that detects data drift without requiring labels.",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 96
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## What it does\n\nDriftWatch tracks whether a deployed model is seeing data that looks different from what it learned during training.\n\nIn the loan risk scenario, a model can look healthy in January and silently degrade by August as applicant income and credit profiles shift. DriftWatch catches that shift early by comparing production feature distributions to a known reference baseline and then surfacing high-impact drift first.",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 97
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## Quick Start\n\n```bash\ngit clone https://github.com/agilap/driftwatch.git\ncd driftwatch\ncp .env.example .env\ndocker-compose up\n```\n\nAPI docs: http://localhost:8000/docs",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 98
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## Key Concepts\n\n- Reference distribution vs production snapshot:\n  Reference data is the baseline (usually training data statistics). Production snapshots are daily (or periodic) batches from live inference traffic. Drift is measured by comparing each snapshot to the reference.\n- KS test (Kolmogorov-Smirnov):\n  KS checks whether two numeric samples likely came from the same underlying distribution. A low p-value means the production feature shape/location changed significantly.\n- PSI (Population Stability Index):\n  PSI compares binned proportions between reference and production. It gives an intuitive shift magnitude where higher values indicate stronger population movement.\n- JS divergence (Jensen-Shannon):\n  JS divergence is a symmetric distance between two probability distributions. It is bounded and stable for both continuous-binned and categorical-style comparisons.\n- Weighted drift scoring:\n  Not all drift should page the team. DriftWatch multiplies drift magnitude by feature importance so low-business-impact features do not drown out critical ones.\n- Health score formula:\n  Overall weekly health is computed as:\n  `overall_health = 100 \u00d7 (1 - mean(weighted_scores))`",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 99
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## API Reference\n\n| Method | Path | Description |\n|---|---|---|\n| `GET` | `/health` | Liveness and version check |\n| `POST` | `/models` | Register a monitored model |\n| `GET` | `/models` | List monitored models |\n| `GET` | `/models/{model_id}` | Fetch one model |\n| `POST` | `/models/{model_id}/importances` | Upload feature importances |\n| `POST` | `/ingest/reference` | Register reference distribution |\n| `GET` | `/ingest/reference/{model_id}` | List reference features |\n| `POST` | `/ingest/snapshot` | Ingest production snapshot |\n| `GET` | `/ingest/snapshots/{model_id}` | List snapshot dates |\n| `GET` | `/ingest/snapshots/{model_id}/{window_date}` | Get snapshot stats for one date |\n| `GET` | `/drift/{model_id}/{window_date}` | Get drift scores for one date |\n| `GET` | `/drift/{model_id}/latest` | Get latest drift summary |\n| `GET` | `/alerts` | List active alerts (`model_id` optional) |\n| `GET` | `/alerts/{model_id}` | List alerts for one model |\n| `PATCH` | `/alerts/{alert_id}/resolve` | Resolve alert |\n| `GET` | `/reports/{model_id}` | List reports for a model |\n| `GET` | `/reports/{model_id}/latest` | Get latest weekly report |\n| `GET` | `/reports/{model_id}/{week_start}` | Get report for a week |\n| `POST` | `/reports/{model_id}/generate` | Manually generate report |",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 100
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## Configuration\n\nEnvironment variables (from `.env.example`):\n\n| Variable | Default | Description |\n|---|---|---|\n| `DATABASE_URL` | `postgresql+asyncpg://driftwatch:driftwatch@localhost:5432/driftwatch` | Async SQLAlchemy connection string |\n| `SECRET_KEY` | `changeme-in-production` | App secret for production hardening |\n| `ALERT_WEBHOOK_URL` | empty | Optional webhook for alert delivery |\n| `REPORT_SCHEDULE_CRON` | `0 0 * * 1` | Weekly report cron (UTC) |\n| `LOG_LEVEL` | `INFO` | Global log verbosity |\n| `PSI_YELLOW_THRESHOLD` | `0.10` | PSI threshold for yellow severity |\n| `PSI_RED_THRESHOLD` | `0.20` | PSI threshold for red severity |\n| `KS_PVALUE_THRESHOLD` | `0.05` | KS significance threshold |\n| `MIN_SAMPLE_WARNING` | `30` | Warning threshold for low sample size |",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 101
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## Running Tests\n\n```bash\ndocker-compose run api pytest -v\n```",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 102
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## Architecture\n\nSee [architecture.md](architecture.md) for component and data-flow details.",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 103
+  },
+  {
+    "repo": "driftwatch",
+    "type": "readme",
+    "text": "From the README of repository driftwatch:\n## Why This Matters\n\nA model can still return predictions while quietly degrading.\n\nIn the loan scoring framing: performance that looked like 94% in January can collapse to 71% by August when the input population shifts. DriftWatch is designed to detect this shift early, prioritize critical features, and provide actionable weekly health summaries before business KPIs are materially damaged.",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 104
+  },
+  {
+    "repo": "driftwatch",
+    "type": "dependencies",
+    "text": "The dependency file requirements.txt in repository driftwatch shows which libraries the project uses. driftwatch uses the alembic package. driftwatch uses the apscheduler package. driftwatch uses the asyncpg package. driftwatch uses the black package. driftwatch uses the fastapi package. driftwatch uses the httpx package. driftwatch uses the numpy package. driftwatch uses the pydantic package. driftwatch uses the pydantic-settings package. driftwatch uses the pytest package. driftwatch uses the pytest-asyncio package. driftwatch uses the ruff package. driftwatch uses the scipy package. driftwatch uses the sqlalchemy package. driftwatch uses the uvicorn package.",
+    "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/requirements.txt",
+    "date": "2026-03-27T14:20:27Z",
+    "packages": [
+      "alembic",
+      "apscheduler",
+      "asyncpg",
+      "black",
+      "fastapi",
+      "httpx",
+      "numpy",
+      "pydantic",
+      "pydantic-settings",
+      "pytest",
+      "pytest-asyncio",
+      "ruff",
+      "scipy",
+      "sqlalchemy",
+      "uvicorn"
+    ],
+    "id": 105
+  },
+  {
+    "repo": "driftwatch",
+    "type": "commits",
+    "text": "Contributor agilap has 12 commits in repository driftwatch.",
+    "url": "https://github.com/agilap/driftwatch",
+    "date": "2026-03-27T14:20:27Z",
+    "id": 106
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "metadata",
+    "text": "GitHub repository e-commerce-fraud-detection: no description. Primary language: Jupyter Notebook. Topics: none. Created 2026-02-25, last pushed 2026-04-06.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 107
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "languages",
+    "text": "Languages in repository e-commerce-fraud-detection by bytes of code: Jupyter Notebook (86%), Python (13%).",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 108
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n# E-Commerce Fraud Detection: Multimodal Transfer Learning Framework\n\nThis repository is the thesis implementation of [Capinpin, Kobe Andrew S.](https://github.com/VinnRe), [Cuarto, Mico Raphael F.](https://github.com/oocim), and [Penuliar, Alexander Guille A.](https://github.com/agilap) for the degree Bachelor of Science in Computer Science at Batangas State University - The National Engineering University.\n\nThe study is titled Cross-Platform Multimodal Product Fraud Detection Framework Using Ensemble Integration and Transfer Learning for E-Commerce Platforms.\n\nThis repository contains the implementation, datasets, notebooks, and study artifacts for the multimodal e-commerce fraud detection framework developed in that thesis. The system combines text, image, and tabular metadata signals, then fuses modality probabilities into a final fraud decision.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 109
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## \u00a9\ufe0f Credits\n\n- Researchers: [Capinpin, Kobe Andrew S.](https://github.com/VinnRe), [Cuarto, Mico Raphael F.](https://github.com/oocim), [Penuliar, Alexander Guille A.](https://github.com/agilap)\n- Adviser: Lanie P. Palad\n- Institution: College of Informatics and Computing Sciences, Batangas State University - The National Engineering University\n- Thesis Date: May 2026",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 110
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### \ud83c\udfaf Goal\nBuild and evaluate a fraud detection framework for e-commerce listings using:\n- Text modality: hybrid RoBERTa + TF-IDF\n- Image modality: ResNet-50\n- Metadata modality: classical ML models (Logistic Regression, Random Forest, XGBoost)\n- Final decision: weighted late-fusion ensemble",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 111
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### \ud83d\udd0e Main Study Focus\n- Compare unimodal and multimodal baselines\n- Apply transfer adaptation to local datasets\n- Improve fraud-class capture under severe class imbalance\n- Report operationally relevant metrics (especially Recall and F1)",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 112
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 2. Repository Layout\n\n```text\n.\n|- src/\n|  |- pipeline/      # preprocessing, local prep, pseudo-label and transfer-set builders\n|  |- training/      # metadata training scripts (baseline + transfer)\n|  |- evaluation/    # local baseline and ensemble evaluation scripts\n|  |- inference/     # production-style multimodal inference pipeline\n|  |- generation/    # synthetic data generation helpers\n|- notebooks/\n|  |- training/      # model training notebooks (text/image, baseline + transfer)\n|  |- analysis/      # analysis and result notebooks\n|- data/\n|  |- raw/           # original raw CSV(s)\n|  |- processed/     # processed modality datasets\n|  |- local/         # optional local-only CSVs\n|- docs/\n|  |- thesis/        # manuscript files\n|  |- slides/        # presentation content\n|- requirements.txt\n|- .gitignore\n```",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 113
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 3. System Pipeline\n\n1. Raw CSV ingestion and cleaning\n2. Modality-specific dataset creation\n3. Optional synthetic augmentation and pseudo-labeling\n4. Modality model training\n5. Late-fusion ensemble scoring\n6. Holdout evaluation and comparative analysis",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 114
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### \ud83d\udd23 Primary Inputs\n- `data/raw/Training_Data - Train.csv`",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 115
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### \u2699\ufe0f Processed Datasets\n- `data/processed/text_dataset.csv`\n- `data/processed/image_dataset.csv`\n- `data/processed/metadata_dataset.csv`\n- `data/processed/synthetic_text_dataset.csv`\n- `data/processed/synthetic_metadata_dataset.csv`",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 116
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### \ud83d\udcdd Requirements\n- Python 3.10+ recommended\n- pip\n- Internet access may be needed for model/tokenizer downloads when running some workflows",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 117
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### \ud83d\udce5 Install\n\n```bash\npython -m venv .venv",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 118
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n# Windows PowerShell\n.venv\\Scripts\\Activate.ps1\n\npip install --upgrade pip\npip install -r requirements.txt\n```",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 119
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 6. How To Run\n\nThis project supports two workflows:\n1. Inference-only (use already trained artifacts)\n2. Full training and evaluation (rebuild datasets, train models, and evaluate)",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 120
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### A) Quick Inference (Final Model Demo)\n\nRun multimodal prediction on a CSV matching the raw schema.\n\n```bash\npython src/inference/predict.py \\\n  --profile local_only \\\n  --input \"data/raw/Training_Data - Train.csv\" \\\n  --output \"predictions/fraud_predictions.csv\"\n```\n\nSupported profiles:\n1. global\n2. local_only\n3. ablation",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 121
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### B) Artifact Directory Contract (Required by predict.py)\n\nThe inference loader expects each profile directory to follow this exact structure.\n\n```text\nsaved_models/ or transfer_models/<profile>/\n|- text/\n|  |- hybrid_roberta_tfidf.pth\n|  |- tfidf_vectorizer.joblib\n|  |- tokenizer/...\n|- image/\n|  |- best_resnet50.pth\n|- metadata/\n|  |- xgboost.joblib OR random_forest.joblib OR logistic_regression.joblib\n|  |- scaler.joblib\n|  |- minmax_stats.json\n|- ensemble_weights.json   # optional, but recommended\n```\n\nIf a modality folder is missing, inference still runs but that modality is skipped.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 122
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### C) Full Training Workflow (Global Baseline)\n\nStep 1: Rebuild processed modality datasets.\n\n```bash\npython src/pipeline/preprocessing_pipeline.py \\\n  --input \"data/raw/Training_Data - Train.csv\" \\\n  --output \"data/processed\"\n```\n\nStep 2: Train text and image models using notebooks.\n\nTraining notebooks:\n1. notebooks/training/train_text_roberta_colab.ipynb\n2. notebooks/training/train_image_resnet_colab.ipynb\n\nSave outputs to:\n1. saved_models/text/hybrid_roberta_tfidf.pth\n2. saved_models/text/tfidf_vectorizer.joblib\n3. saved_models/text/tokenizer/\n4. saved_models/image/best_resnet50.pth\n\nStep 3: Train metadata baseline model.\n\n```bash\npython src/training/train_metadata.py\n```\n\nThis script writes model files to saved_models/ by default. For inference compatibility, place metadata artifacts under saved_models/metadata/.\n\nRequired metadata files for global profile:\n1. saved_models/metadata/xgboost.joblib (or random_forest.joblib or logistic_regression.joblib)\n2. saved_models/metadata/scaler.joblib\n3. saved_models/metadata/minmax_stats.json\n\nExample (PowerShell) to place baseline metadata artifacts into the expected folder:\n\n```powershell\nNew-Item -ItemType Directory -Force -Path \"saved_models/metadata\" | Out-Null\nMove-Item \"saved_models/xgboost.joblib\" \"saved_models/metadata/xgboost.joblib\" -Force\nMove-Item \"saved_models/random_forest.joblib\" \"saved_models/metadata/random_forest.joblib\" -Force\nMove-Item \"saved_models/logistic_regression.joblib\" \"saved_models/metadata/logistic_regression.joblib\" -Force\nMove-Item \"saved_models/scaler.joblib\" \"saved_models/metadata/scaler.joblib\" -Force\nMove-Item \"saved_models/minmax_stats.json\" \"saved_models/metadata/minmax_stats.json\" -Force\n```\n\nStep 4: Run baseline local evaluation and ensemble evaluation as needed.\n\n```bash\npython src/evaluation/evaluate_local_baseline.py --split test\npython src/evaluation/ensemble_evaluate.py --profile global\n```",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 123
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### D) Full Training Workflow (Transfer: local_only)\n\nStep 1: Prepare local modality datasets.\n\n```bash\npython src/pipeline/prepare_local_datasets.py \\\n  --local1 \"data/local/local1.csv\" \\\n  --local2 \"data/local/local2.csv\" \\\n  --out \"processed_data/local\"\n```\n\nStep 2: Create untouched final holdout split.\n\n```bash\npython src/pipeline/create_local_final_holdout.py --test-size 0.2 --seed 42\n```\n\nStep 3: Generate pseudo labels (repeat by round if needed).\n\n```bash\npython src/pipeline/generate_local_pseudolabels.py \\\n  --round 1 \\\n  --fraud-min 0.58 \\\n  --legit-max 0.24 \\\n  --agreement 2 \\\n  --max-legit-ratio 3.0\n```\n\nStep 4: Build transfer-training modality datasets.\n\n```bash\npython src/pipeline/build_local_transfer_training_sets.py --exclude-holdout\n```\n\nStep 5: Train transfer text and image models using notebooks.\n\nTraining notebooks:\n1. notebooks/training/train_text_roberta_transfer_colab.ipynb\n2. notebooks/training/train_image_resnet_transfer_colab.ipynb\n\nSave outputs to:\n1. transfer_models/local_only/text/hybrid_roberta_tfidf.pth\n2. transfer_models/local_only/text/tfidf_vectorizer.joblib\n3. transfer_models/local_only/text/tokenizer/\n4. transfer_models/local_only/image/best_resnet50.pth\n\nStep 6: Train transfer metadata model.\n\n```bash\npython src/training/train_metadata_transfer.py \\\n  --profile local_only \\\n  --data \"processed_data/local/transfer_train/local_transfer_train_metadata_dataset.csv\" \\\n  --pred-out-dir \"predictions/transfer/local_only\" \\\n  --model-out-dir \"transfer_models/local_only/metadata\"\n```\n\nStep 7: Evaluate ensemble for transfer profile.\n\n```bash\npython src/evaluation/ensemble_evaluate.py \\\n  --profile local_only \\\n  --pred-dir \"predictions/transfer/local_only\" \\\n  --output \"predictions/transfer/local_only/ensemble_predictions_transfer.csv\"\n```",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 124
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n### E) Full Training Workflow (Transfer Ablation)\n\nBuild mixed local+former datasets, then train using profile ablation paths.\n\n```bash\npython src/pipeline/build_local_global_ablation_sets.py \\\n  --former-ratio 0.4 \\\n  --local-ratio 0.6 \\\n  --seed 42\n```\n\nThen train/save artifacts under transfer_models/ablation/ and predictions/transfer/ablation/.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 125
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 7. Expected Outputs\n\nPrimary output roots:\n1. predictions/\n2. predictions/local/\n3. predictions/transfer/local_only/\n4. predictions/transfer/ablation/\n5. saved_models/\n6. transfer_models/\n\nTypical artifacts:\n1. Per-modality probability CSVs\n2. Ensemble prediction CSVs\n3. Metrics JSON files\n4. Experiment logs\n5. Trained model binaries and preprocessing assets\n\nKey files produced by scripts:\n1. src/training/train_metadata.py -> predictions/metadata_test_predictions.csv and saved_models/*.joblib\n2. src/training/train_metadata_transfer.py -> transfer_models/<profile>/metadata/*.joblib and metadata_test_predictions_transfer.csv\n3. src/pipeline/generate_local_pseudolabels.py -> predictions/local/local_unlabeled_pseudo_*.csv and processed_data/local/local_pseudo_labeled_raw.csv\n4. src/pipeline/create_local_final_holdout.py -> processed_data/local/final_holdout/*",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 126
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 8. Reproducibility Notes\n\n- Several scripts use `seed=42` by default.\n- Evaluate using an untouched holdout split for fair comparison.\n- In fraud-imbalanced setups, prioritize Recall and F1 for operational analysis.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 127
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 9. Known Path Assumptions\n\nSome scripts were originally authored before folder refactoring and still assume legacy directories (for example `processed_data/`, `saved_models/`, `transfer_models/` as runtime roots).\n\nIf a script fails with path errors:\n- pass explicit path arguments when supported\n- create expected runtime folders before running\n- or execute the equivalent notebook workflow in `notebooks/`",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 128
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "readme",
+    "text": "From the README of repository e-commerce-fraud-detection:\n## 10. License and Usage\n\nUse this repository for academic and research purposes according to your institution's policy and any dataset usage restrictions.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/README.md",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 129
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "dependencies",
+    "text": "The dependency file requirements.txt in repository e-commerce-fraud-detection shows which libraries the project uses. e-commerce-fraud-detection uses the Pillow package. e-commerce-fraud-detection uses the imbalanced-learn package. e-commerce-fraud-detection uses the joblib package. e-commerce-fraud-detection uses the matplotlib package. e-commerce-fraud-detection uses the nltk package. e-commerce-fraud-detection uses the numpy package. e-commerce-fraud-detection uses the pandas package. e-commerce-fraud-detection uses the requests package. e-commerce-fraud-detection uses the scikit-learn package. e-commerce-fraud-detection uses the scipy package. e-commerce-fraud-detection uses the torch package. e-commerce-fraud-detection uses the torchvision package. e-commerce-fraud-detection uses the tqdm package. e-commerce-fraud-detection uses the transformers package. e-commerce-fraud-detection uses the xgboost package.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection/blob/main/requirements.txt",
+    "date": "2026-04-06T09:40:59Z",
+    "packages": [
+      "Pillow",
+      "imbalanced-learn",
+      "joblib",
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "requests",
+      "scikit-learn",
+      "scipy",
+      "torch",
+      "torchvision",
+      "tqdm",
+      "transformers",
+      "xgboost"
+    ],
+    "id": 130
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "commits",
+    "text": "Contributor VinnRe has 1 commits in repository e-commerce-fraud-detection.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 131
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "commits",
+    "text": "Contributor agilap has 4 commits in repository e-commerce-fraud-detection.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 132
+  },
+  {
+    "repo": "e-commerce-fraud-detection",
+    "type": "commits",
+    "text": "Contributor oocim has 25 commits in repository e-commerce-fraud-detection.",
+    "url": "https://github.com/oocim/e-commerce-fraud-detection",
+    "date": "2026-04-06T09:40:59Z",
+    "id": 133
+  },
+  {
+    "repo": "sediment",
+    "type": "metadata",
+    "text": "GitHub repository sediment: Memory for coding agents that only keeps what earns its place \u2014 and forgets what went stale. One markdown file, no vault, no database.. Primary language: JavaScript. Topics: none. Created 2026-07-01, last pushed 2026-07-01.",
+    "url": "https://github.com/agilap/sediment",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 134
+  },
+  {
+    "repo": "sediment",
+    "type": "languages",
+    "text": "Languages in repository sediment by bytes of code: JavaScript (100%).",
+    "url": "https://github.com/agilap/sediment",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 135
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n# Sediment\n\n**A memory skill for coding agents that only keeps what earns its place \u2014 and forgets what went stale.** One markdown file in your repo. No vault, no database, no setup.\n\nIn a controlled A/B, agents *without* memory reintroduced a documented bug **6 out of 10 times** \u2014 a bug that **passes every test** and only surfaces under load. With Sediment: **0 out of 10.** ([benchmark](./BENCHMARK.md))\n\n---\n\n> Everyone is building the library. Sediment is the librarian.\n\nMost agent-memory tools remember too much and forget nothing. A few weeks in, you've got a memory bigger than the codebase, half of it pointing at files you deleted. Sediment is the opposite bet: a single skill you paste into your agent's instructions that writes down **only what it can't re-derive from the code**, and cleans out the stale stuff by itself.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 136
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## The one principle\n\n**Don't remember what you can re-derive.**\n\nIf a future session could figure it out just by reading the code, it doesn't get saved. Memory is only for what the code *doesn't* say: decisions, dead ends, constraints, and the *why* behind things. This is what keeps the file small \u2014 and small is the whole point.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 137
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## What it does\n\n**Write-gate** \u2014 before saving anything, climb the ladder, stop at the first \"no\":\n1. Would a future session take a *wrong action* without this \u2014 not just a slower one?\n2. Is it durable (still true in a month)?\n3. Is it not already written down (README, comment, CLAUDE.md)?\n4. Who said it \u2014 a human, or the agent's own inference? (Provenance is tagged.)\n\n**Forget-pass** \u2014 when a session changes something memory-relevant (deletes/renames referenced code, reverts an approach, learns an undocumented decision), for every memory it touched: delete it if it points at deleted code, reconcile it if it was contradicted, re-challenge it if it was a low-confidence guess whose subject changed, prune it if it's gone unread. Then print one line you can veto:\n\n```\n\ud83e\udde0 remembered: chose-jose-for-jwt \u00b7 forgot: legacy-auth (referenced deleted src/authMiddleware.js)\n```\n\nMemory that can't forget rots into misinformation. The forget-pass is the point, not the cleanup.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 138
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## Does it actually work? (the benchmark)\n\nA controlled A/B, 10 trials per arm, cold agents given an identical coding task with **no hint about memory**. The task tempts the agent toward a fix that was already tried and reverted \u2014 knowledge that lives only in memory.\n\n| | With Sediment | No memory |\n|---|---|---|\n| Reintroduced the documented bug | **0 / 10** | **6 / 10 (60%)** |\n| Fix passes the test suite | 10 / 10 | 10 / 10 |\n| Tokens per session | ~26k | ~21k |\n\nThe result held stable across two runs, including one with all explanatory code comments stripped. **The most important row is the middle one:** every bad fix passes the tests. The reintroduced bug (event loop blocking, dropped events under load) is invisible to normal review \u2014 the memory is the only thing that catches it. Full method and caveats in [BENCHMARK.md](./BENCHMARK.md).\n\n**It costs a bit more, on purpose.** Reading and reasoning about memory adds ~25% tokens on this (tiny) task \u2014 proportionally less on real ones. Sediment is not a token-saver. It trades a couple cents of tokens for catching a regression your tests won't. If your agent has never confidently redone a mistake nobody wrote down, you don't need this. If it has, that's the whole pitch.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 139
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## Install\n\n**Claude Code (plugin) \u2014 easiest:**\n```\n/plugin marketplace add agilap/sediment\n/plugin install sediment\n```\n\n**Paste-anywhere (any agent):** two tiers \u2014 a tiny always-on core\n(`skills/sediment/SKILL.md`) and an on-demand protocol\n(`skills/sediment/PROTOCOL.md`). No install step, no service.\n\n- **Claude Code** \u2014 install the plugin above, or paste `skills/sediment/SKILL.md` into `CLAUDE.md`. Keep `skills/sediment/PROTOCOL.md` in the repo.\n- **Cursor** \u2014 paste `skills/sediment/SKILL.md` into `.cursorrules`.\n- **Codex / Gemini CLI / Copilot** \u2014 paste `skills/sediment/SKILL.md` into `AGENTS.md`.\n- **Anything else** \u2014 paste `skills/sediment/SKILL.md`'s contents into whatever rules file it reads.\n\n`skills/sediment/SKILL.md` is loaded every session \u2014 it's small on purpose.\n`skills/sediment/PROTOCOL.md` (the full write-gate ladder and forget-pass\nrules) is consulted by the agent only when the session actually did something\nmemory-relevant (deleted/renamed something referenced by memory, reverted an\napproach, learned an undocumented decision, or the user said to remember/forget).\nSessions that don't trip one of those triggers skip curation entirely and\npay only the cost of reading the memory file.\n\nThen drop an empty `.agent-memory.md` in your repo root and commit it with your code.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 140
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## The memory file\n\nFlat, greppable, one fact per entry:\n\n```markdown",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 141
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## chose-jose-for-jwt\nPicked jose over jsonwebtoken because it's ESM-native (project is ESM-only).\n- since: 2026-07-01  provenance: human  confidence: high  refs: src/auth/service.js\n```\n\n`provenance` (human vs inferred) and `confidence` are separate on purpose: *who* said it never changes, but *how sure we are* can. Cross-link related facts with `[[slug]]`.\n\nAn optional `last-used:` field enables disuse-based pruning, but it's opt-in\n\u2014 not stamped on every session by default. See `PROTOCOL.md` for details.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 142
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## Honest limits\n\n- **N=10 per arm** \u2014 directional, not statistically powered.\n- **Benefit peaks at mid-tier models, and is not monotonic in weakness.** Measured across the Claude family: Sonnet went 100%\u21920% with Sediment (a 100-point swing); very weak models (Haiku) are helped but protection-limited (~40% still hit \u2014 they follow the memory less reliably); very strong models (Opus, already cautious) have less to fix. See \"Model scaling\" in [BENCHMARK.md](./BENCHMARK.md). Unproven outside the Claude family / other harnesses.\n- **The 60% is a ceiling for that specific landmine.** ~40% of the time the memoryless agent inferred the right answer from convention (an HTTP 202 hint). Memory's value concentrates where the constraint is genuinely non-obvious.\n- **It costs tokens.** See above. This is a correctness tool, not an efficiency tool.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 143
+  },
+  {
+    "repo": "sediment",
+    "type": "readme",
+    "text": "From the README of repository sediment:\n## License\n\nMIT. Take it, fork it, rename it.",
+    "url": "https://github.com/agilap/sediment/blob/main/README.md",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 144
+  },
+  {
+    "repo": "sediment",
+    "type": "commits",
+    "text": "Contributor claude has 5 commits in repository sediment.",
+    "url": "https://github.com/agilap/sediment",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 145
+  },
+  {
+    "repo": "sediment",
+    "type": "commits",
+    "text": "Contributor agilap has 7 commits in repository sediment.",
+    "url": "https://github.com/agilap/sediment",
+    "date": "2026-07-01T07:56:11Z",
+    "id": 146
+  },
+  {
+    "repo": "synthetica",
+    "type": "metadata",
+    "text": "GitHub repository synthetica: no description. Primary language: Python. Topics: none. Created 2026-03-05, last pushed 2026-03-16.",
+    "url": "https://github.com/agilap/synthetica",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 147
+  },
+  {
+    "repo": "synthetica",
+    "type": "languages",
+    "text": "Languages in repository synthetica by bytes of code: Python (81%), Jupyter Notebook (16%), Shell (2%).",
+    "url": "https://github.com/agilap/synthetica",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 148
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n# SyntheticImageGen \ud83d\uddbc\ufe0f\u2192\ud83e\uddec\n> Real Dataset \u2192 Synthetic Look-Alike Image Generator\n\nGive it a folder of real images \u2192 it learns their visual distribution \u2192 generates a synthetic fake dataset that looks real.\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 149
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## The Problem It Solves\n\nYou need 500 training images. You have 50.\n\nTraditional augmentation (flip, crop, rotate) reuses the same pixels. **SyntheticImageGen manufactures new ones** \u2014 statistically indistinguishable from your real data, generated from scratch by a diffusion model fine-tuned on your specific visual domain.\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 150
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## How It Works (4 Phases)\n\n```\n[Your 50 Real Images]\n        \u2193\n  Phase 1: Fingerprint\n  Extract color, brightness, texture distribution\n        \u2193\n  Phase 2: LoRA Fine-Tune (SD-Turbo, ~20 min on T4)\n  Teach the model your visual domain\n        \u2193\n  Phase 3: Generate + Quality Filter\n  Make N synthetic images \u2192 discard outliers via cosine similarity\n        \u2193\n  Phase 4: Download\n  ZIP with real/ + synthetic/ folders + metadata JSON per image\n```\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 151
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## MVP Scope\n\n| Feature | Status |\n|---|---|\n| Image upload (folder or ZIP) | \u2705 MVP |\n| Auto-resize to 256\u00d7256 | \u2705 MVP |\n| Metadata fingerprint (color, brightness, texture) | \u2705 MVP |\n| LoRA fine-tune on SD-Turbo | \u2705 MVP |\n| Synthetic image generation (N configurable) | \u2705 MVP |\n| Cosine similarity quality filter | \u2705 MVP |\n| Side-by-side real vs synthetic preview grid | \u2705 MVP |\n| ZIP export with labels + metadata JSON | \u2705 MVP |\n| Authentication / user accounts | \u274c Post-MVP |\n| Multiple domain support per session | \u274c Post-MVP |\n| Cloud GPU provisioning | \u274c Post-MVP |\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 152
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Stack\n\n| Layer | Tech |\n|---|---|\n| UI | Gradio |\n| Diffusion backbone | SD-Turbo (`stabilityai/sd-turbo`) |\n| Fine-tuning | LoRA via PEFT |\n| Diffusion pipeline | \ud83e\udd17 diffusers |\n| Image analysis | OpenCV + Pillow |\n| Numerics | NumPy |\n| Training runtime | Google Colab (T4 GPU) |\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 153
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Project Structure\n\n```\nsynthetic-image-gen/\n\u251c\u2500\u2500 app.py                  # Gradio UI entry point\n\u251c\u2500\u2500 pipeline/\n\u2502   \u251c\u2500\u2500 ingestor.py         # Upload handling, resize, fingerprint extraction\n\u2502   \u251c\u2500\u2500 trainer.py          # LoRA fine-tune on SD-Turbo\n\u2502   \u251c\u2500\u2500 generator.py        # Synthetic image generation loop\n\u2502   \u251c\u2500\u2500 filter.py           # Cosine similarity quality filter\n\u2502   \u2514\u2500\u2500 exporter.py         # ZIP builder + metadata JSON writer\n\u251c\u2500\u2500 utils/\n\u2502   \u251c\u2500\u2500 fingerprint.py      # Color histogram, brightness, texture variance\n\u2502   \u2514\u2500\u2500 similarity.py       # Cosine distance between fingerprint vectors\n\u251c\u2500\u2500 notebooks/\n\u2502   \u2514\u2500\u2500 train_colab.ipynb   # Full LoRA training on Colab T4\n\u251c\u2500\u2500 requirements.txt\n\u2514\u2500\u2500 README.md\n```\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 154
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n# 1. Clone and install\ngit clone https://github.com/yourname/synthetic-image-gen\ncd synthetic-image-gen\npip install -r requirements.txt",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 155
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n# 3. Open browser \u2192 upload your image folder \u2192 set N \u2192 generate\n```\n\n**For LoRA training**, use the Colab notebook (`notebooks/train_colab.ipynb`) \u2014 local training requires ~8GB VRAM minimum.\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 156
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Requirements\n\n```txt\ngradio>=4.0\ndiffusers>=0.27\npeft>=0.10\ntransformers>=4.40\ntorch>=2.1\nopencv-python\nPillow\nnumpy\naccelerate\n```\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 157
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Example Use Cases\n\n- **Plant disease detection** \u2014 50 leaf photos \u2192 500 synthetic diseased leaves\n- **Medical imaging** \u2014 augment rare condition scans for classifier training\n- **Industrial defect detection** \u2014 generate fake-but-realistic defect samples\n- **Wildlife cameras** \u2014 expand small camera trap datasets\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 158
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Output Format\n\n```\nsynthetic_dataset.zip\n\u251c\u2500\u2500 real/\n\u2502   \u251c\u2500\u2500 img_001.jpg\n\u2502   \u2514\u2500\u2500 img_002.jpg\n\u2514\u2500\u2500 synthetic/\n    \u251c\u2500\u2500 syn_001.jpg\n    \u251c\u2500\u2500 syn_001_meta.json    \u2190 { seed, similarity_score, base_image }\n    \u251c\u2500\u2500 syn_002.jpg\n    \u2514\u2500\u2500 syn_002_meta.json\n```\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 159
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Quality Filter Logic\n\nEach synthetic image is fingerprinted (same pipeline as real images). Its feature vector is compared to the **centroid of the real distribution** via cosine distance.\n\n```\nsimilarity_score = cosine_similarity(synthetic_fingerprint, real_centroid)\nthreshold = 0.80  # configurable\n```\n\nImages below threshold are discarded and regenerated. Only statistically close images make it into your dataset.\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 160
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Limitations (Be Honest in Your Portfolio)\n\n- LoRA fine-tune quality scales with dataset size \u2014 fewer than ~20 real images may produce noisy results\n- SD-Turbo is fast but lower fidelity than SDXL; swap backbone for higher quality at cost of speed\n- Quality filter uses shallow features (color, texture) \u2014 semantic accuracy not guaranteed\n- Not a replacement for real data; works best as a **complement** to real collection\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 161
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Roadmap\n\n- [ ] SDXL backbone option for higher fidelity\n- [ ] FID score reporting (Fr\u00e9chet Inception Distance)\n- [ ] Prompt-guided generation (\"add rain,\" \"change lighting\")\n- [ ] Hugging Face Spaces deployment\n- [ ] Batch LoRA training across multiple domains\n\n---",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 162
+  },
+  {
+    "repo": "synthetica",
+    "type": "readme",
+    "text": "From the README of repository synthetica:\n## Why This Project Matters\n\nData augmentation is a **core production skill** every ML team needs. This project demonstrates:\n\n1. Understanding of the full ML data pipeline \u2014 not just model training\n2. Practical use of diffusion models beyond text-to-image demos\n3. Statistical thinking about data distributions\n4. End-to-end product thinking: ingest \u2192 process \u2192 generate \u2192 filter \u2192 export\n\nPair with **PlantDoc** or **TruthScan** in your portfolio for a complete ML engineering story.\n\n---\n\n*Built with SD-Turbo + LoRA + Gradio | ~2 week build | Colab T4 compatible*",
+    "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 163
+  },
+  {
+    "repo": "synthetica",
+    "type": "dependencies",
+    "text": "The dependency file requirements.txt in repository synthetica shows which libraries the project uses. synthetica uses the Pillow package. synthetica uses the accelerate package. synthetica uses the bitsandbytes package. synthetica uses the diffusers package. synthetica uses the gradio package. synthetica uses the numpy package. synthetica uses the opencv-python package. synthetica uses the peft package. synthetica uses the pytest package. synthetica uses the pytest-mock package. synthetica uses the pyyaml package. synthetica uses the scipy package. synthetica uses the torch package. synthetica uses the torchvision package. synthetica uses the transformers package. synthetica uses the xformers package.",
+    "url": "https://github.com/agilap/synthetica/blob/main/requirements.txt",
+    "date": "2026-03-16T05:12:02Z",
+    "packages": [
+      "Pillow",
+      "accelerate",
+      "bitsandbytes",
+      "diffusers",
+      "gradio",
+      "numpy",
+      "opencv-python",
+      "peft",
+      "pytest",
+      "pytest-mock",
+      "pyyaml",
+      "scipy",
+      "torch",
+      "torchvision",
+      "transformers",
+      "xformers"
+    ],
+    "id": 164
+  },
+  {
+    "repo": "synthetica",
+    "type": "commits",
+    "text": "Contributor agilap has 26 commits in repository synthetica.",
+    "url": "https://github.com/agilap/synthetica",
+    "date": "2026-03-16T05:12:02Z",
+    "id": 165
+  },
+  {
+    "repo": "vantage",
+    "type": "metadata",
+    "text": "GitHub repository vantage: no description. Primary language: Python. Topics: none. Created 2026-03-26, last pushed 2026-03-31.",
+    "url": "https://github.com/agilap/vantage",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 166
+  },
+  {
+    "repo": "vantage",
+    "type": "languages",
+    "text": "Languages in repository vantage by bytes of code: Python (100%).",
+    "url": "https://github.com/agilap/vantage",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 167
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n# Vantage\n\nEnterprise document intelligence and RAG pipeline for mixed files (PDFs, Excel, emails), built for the Zaigo demo submission.",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 168
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Prerequisites\n- Python 3.10+\n- Supabase account and project\n- OpenAI API key",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 169
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Setup And Run\n1. Clone and open the repo:\n```bash\ngit clone <your-repo-url>\ncd vantage\n```\n2. Create and activate a virtual environment:\n```bash\npython3 -m venv .venv\nsource .venv/bin/activate\n```\n3. Install dependencies:\n```bash\npip install -r requirements.txt\n```\n4. Create your environment file:\n```bash\ncp .env.example .env\n```\n5. Update .env values:\n- OPENAI_API_KEY: your key (sk-...)\n- DATABASE_URL: Supabase transaction pooler URI (port 6543)\n- DATABASE_DIRECT_URL: Supabase direct URI (port 5432)\n- CHROMA_PATH: local Chroma persistence path (example: ./chroma_db)\n- DATA_DIR: data root path (example: ./data)\n- POOL_MIN / POOL_MAX: pool sizes\n6. Initialize schema in Supabase:\n```bash\npython db.py\n```\n7. Launch the app:\n```bash\npython main.py\n```",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 170
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n### 10-K PDFs (SEC EDGAR)\n- Source: SEC EDGAR browser: https://www.sec.gov/cgi-bin/browse-edgar\n- Download annual reports (10-K) for public companies.\n- Suggested mix: 5 to 6 companies across sectors, 2 to 6 reports each.",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 171
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n### Excel Files\n- Export public financial tables (for example from Macrotrends) and save as .xlsx.\n- Create a few intentionally messy sheets:\n  - merged headers\n  - blank rows\n  - multiple sheets with one empty sheet",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 172
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n### Email Files\n- Create plain text files (.txt or .eml) with this structure:\n  - Subject: ...\n  - From: ...\n  - Date: ...\n  - blank line\n  - body text (2 to 3 paragraphs)\n- Include edge cases:\n  - one with near-empty body\n  - one short thread with multiple From: boundaries",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 173
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Demo Flow\n1. Go to Ingest tab.\n2. Paste a folder path with your mixed files (or upload multiple files).\n3. Click Ingest and watch per-file progress.\n4. Go to Query tab.\n5. Ask natural language questions.\n6. Validate grounded answers using source citations and excerpts.",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 174
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Example Queries\n| Query | What it tests |\n|-------|---------------|\n| What was Apple's total revenue in fiscal year 2023? | Cross-document numeric retrieval (PDF 10-K) |\n| Compare gross margins across the ingested 10-K filings. | Multi-document synthesis |\n| Which companies mentioned supply chain risk as a key risk factor? | Semantic search across sections |\n| What is the net income trend for Microsoft over the last three years? | Time-series extraction from structured text |\n| Summarize the email thread about Q3 projections. | Email body retrieval and summarization |\n| What does the revenue sheet show for Q2? | Tabular row-group retrieval (Excel) |\n| Which filing has the highest R&D spend as a percentage of revenue? | Ratio reasoning across documents |",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 175
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## File Map\n- architecture.md: system architecture, schema, costs, and scale path.\n- cache.py: embedding cache read/write with SHA-256 keys.\n- chunk.py: type-aware chunking with token guards.\n- config.py: env loading and required configuration constants.\n- copilot.md: implementation rules and coding constraints.\n- db.py: Supabase pool helpers and schema initialization.\n- embed.py: cache-first batch embeddings and Chroma writes.\n- extract.py: GPT field extraction and summarization.\n- ingest.py: ingest orchestrator for detect/parse/chunk/embed/extract/persist.\n- main.py: Gradio UI wiring for ingest and query.\n- parse/pdf.py: PDF parsing with scanned fallback.\n- parse/excel.py: Excel parsing with merged-cell forward fill.\n- parse/email.py: plain text email parsing with skip guards.\n- requirements.txt: Python dependencies.\n- retrieval.py: retrieval pipeline, grounded answer generation, and query logging.\n- retry.py: retry decorator, safe JSON parsing, reusable OpenAI call.\n- schema.sql: PostgreSQL schema and indexes.\n- seed.py: CLI batch seeding helper that runs ingest_folder.\n- states.md: milestone checklist for project states.",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 176
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Latency And Cost (50-100 Documents)\n| Stage | Time estimate | Cost estimate |\n|---|---|---|\n| PDF parsing (50 PDFs, 10 pages avg) | ~15-30s total | $0 |\n| Excel parsing (20 files) | ~5s total | $0 |\n| Email parsing (30 emails) | ~2s total | $0 |\n| Embedding (500 chunks, batch) | ~8-12s | ~$0.004 |\n| Field extraction (500 chunks, concurrent) | ~45-90s | ~$0.05-0.10 |\n| Query (single) | ~1.5-3s | ~$0.002 |\n| Total ingest (100 docs) | ~2-3 min | < $0.15 |",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 177
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Production Delta\nFor production hardening, move from demo architecture to:\n1. pgvector in Supabase instead of local ChromaDB.\n2. Celery + Redis for queue-based background ingest and extraction.\n3. S3-compatible object storage for raw and processed files.\n4. Textract or equivalent OCR pipeline for scanned PDFs at scale.\n5. Row Level Security (RLS) with tenant-scoped org_id access controls.",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 178
+  },
+  {
+    "repo": "vantage",
+    "type": "readme",
+    "text": "From the README of repository vantage:\n## Quick Demo Commands\nInitialize DB and run UI:\n```bash\npython db.py\npython main.py\n```\nRun CLI seed ingest for a folder:\n```bash\npython seed.py ./data/raw\n```",
+    "url": "https://github.com/agilap/vantage/blob/main/README.md",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 179
+  },
+  {
+    "repo": "vantage",
+    "type": "dependencies",
+    "text": "The dependency file requirements.txt in repository vantage shows which libraries the project uses. vantage uses the chromadb package. vantage uses the gradio package. vantage uses the odfpy package. vantage uses the openai package. vantage uses the openpyxl package. vantage uses the pandas package. vantage uses the pdfplumber package. vantage uses the psycopg2-binary package. vantage uses the pypdf package. vantage uses the python-dotenv package. vantage uses the pyxlsb package. vantage uses the xlrd package.",
+    "url": "https://github.com/agilap/vantage/blob/main/requirements.txt",
+    "date": "2026-03-31T10:50:38Z",
+    "packages": [
+      "chromadb",
+      "gradio",
+      "odfpy",
+      "openai",
+      "openpyxl",
+      "pandas",
+      "pdfplumber",
+      "psycopg2-binary",
+      "pypdf",
+      "python-dotenv",
+      "pyxlsb",
+      "xlrd"
+    ],
+    "id": 180
+  },
+  {
+    "repo": "vantage",
+    "type": "commits",
+    "text": "Contributor agilap has 36 commits in repository vantage.",
+    "url": "https://github.com/agilap/vantage",
+    "date": "2026-03-31T10:50:38Z",
+    "id": 181
+  }
+]
