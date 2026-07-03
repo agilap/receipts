@@ -1,0 +1,60 @@
+{"claim": "DriftWatch detects data drift without requiring labels", "repo": "driftwatch", "label": "true"}
+{"claim": "DriftWatch compares production feature distributions to a reference baseline", "repo": "driftwatch", "label": "true"}
+{"claim": "DriftWatch is built on FastAPI with SQLAlchemy and asyncpg", "repo": "driftwatch", "label": "true"}
+{"claim": "DriftWatch supports webhook-based alert delivery", "repo": "driftwatch", "label": "true"}
+{"claim": "DriftWatch monitors hundreds of production models in real time", "repo": "driftwatch", "label": "stretched"}
+{"claim": "DriftWatch provides a full observability suite for ML systems", "repo": "driftwatch", "label": "stretched"}
+{"claim": "DriftWatch's alerting engine integrates with Slack and PagerDuty", "repo": "driftwatch", "label": "stretched"}
+{"claim": "DriftWatch detects drift in streaming data pipelines", "repo": "driftwatch", "label": "stretched"}
+{"claim": "DriftWatch uses a React dashboard for drift visualization", "repo": "driftwatch", "label": "fabricated"}
+{"claim": "DriftWatch retrains models automatically when drift is detected", "repo": "driftwatch", "label": "fabricated"}
+{"claim": "DriftWatch uses Kafka for snapshot ingestion", "repo": "driftwatch", "label": "fabricated"}
+{"claim": "DriftWatch stores drift metrics in MongoDB", "repo": "driftwatch", "label": "fabricated"}
+{"claim": "Vantage is a RAG pipeline for mixed files including PDFs, Excel sheets, and emails", "repo": "vantage", "label": "true"}
+{"claim": "Vantage uses ChromaDB for local vector storage", "repo": "vantage", "label": "true"}
+{"claim": "Vantage parses PDF documents with pdfplumber and pypdf", "repo": "vantage", "label": "true"}
+{"claim": "Vantage provides a Gradio UI for document ingest and querying", "repo": "vantage", "label": "true"}
+{"claim": "Vantage serves enterprise customers in production", "repo": "vantage", "label": "stretched"}
+{"claim": "Vantage uses pgvector on Supabase for vector search", "repo": "vantage", "label": "stretched"}
+{"claim": "Vantage processes thousands of documents at scale", "repo": "vantage", "label": "stretched"}
+{"claim": "Vantage runs background ingestion through a Celery and Redis queue", "repo": "vantage", "label": "stretched"}
+{"claim": "Vantage uses LangChain for retrieval orchestration", "repo": "vantage", "label": "fabricated"}
+{"claim": "Vantage has a React frontend for the query interface", "repo": "vantage", "label": "fabricated"}
+{"claim": "Vantage uses Elasticsearch for keyword search", "repo": "vantage", "label": "fabricated"}
+{"claim": "Vantage embeds documents with local sentence-transformers models", "repo": "vantage", "label": "fabricated"}
+{"claim": "ISAAC indexes Obsidian Markdown vaults using local sentence-transformers embeddings", "repo": "ISAAC", "label": "true"}
+{"claim": "ISAAC combines vector similarity with lexical matching for hybrid retrieval", "repo": "ISAAC", "label": "true"}
+{"claim": "ISAAC exposes vault search and write-back tools over MCP", "repo": "ISAAC", "label": "true"}
+{"claim": "ISAAC stores its index in SQLite and uses sqlite-vec virtual tables when available", "repo": "ISAAC", "label": "true"}
+{"claim": "ISAAC syncs with Obsidian in real time across devices", "repo": "ISAAC", "label": "stretched"}
+{"claim": "ISAAC supports any note-taking app as a knowledge backend", "repo": "ISAAC", "label": "stretched"}
+{"claim": "ISAAC uses LLM-powered scoring to rank idea candidates", "repo": "ISAAC", "label": "stretched"}
+{"claim": "ISAAC ships a cloud-hosted API for vault search", "repo": "ISAAC", "label": "stretched"}
+{"claim": "ISAAC uses PostgreSQL with pgvector for embedding storage", "repo": "ISAAC", "label": "fabricated"}
+{"claim": "ISAAC is built on a FastAPI backend", "repo": "ISAAC", "label": "fabricated"}
+{"claim": "ISAAC uses a Neo4j graph database for note linking", "repo": "ISAAC", "label": "fabricated"}
+{"claim": "ISAAC provides a web dashboard built with Next.js", "repo": "ISAAC", "label": "fabricated"}
+{"claim": "Veritas checks whether a social media caption matches its visual content using CLIP", "repo": "Veritas", "label": "true"}
+{"claim": "Veritas fine-tunes DistilBERT on the LIAR dataset for text credibility scoring", "repo": "Veritas", "label": "true"}
+{"claim": "Veritas generates plain-English verdicts with TinyLlama", "repo": "Veritas", "label": "true"}
+{"claim": "Veritas accepts Instagram and Facebook post URLs as input", "repo": "Veritas", "label": "true"}
+{"claim": "Veritas detects fake posts across all major social media platforms", "repo": "Veritas", "label": "stretched"}
+{"claim": "Veritas provides real-time misinformation monitoring at scale", "repo": "Veritas", "label": "stretched"}
+{"claim": "Veritas produces production-grade verdicts suitable as ground truth", "repo": "Veritas", "label": "stretched"}
+{"claim": "Veritas cross-references claims against fact-checking databases", "repo": "Veritas", "label": "stretched"}
+{"claim": "Veritas uses GPT-4 for verdict generation", "repo": "Veritas", "label": "fabricated"}
+{"claim": "Veritas detects deepfake videos using a custom CNN", "repo": "Veritas", "label": "fabricated"}
+{"claim": "Veritas is deployed as a FastAPI microservice", "repo": "Veritas", "label": "fabricated"}
+{"claim": "Veritas ingests posts through the Twitter/X API", "repo": "Veritas", "label": "fabricated"}
+{"claim": "Clarion transcribes meeting audio using Whisper", "repo": "clarion", "label": "true"}
+{"claim": "Clarion extracts decisions and action items from meeting transcripts", "repo": "clarion", "label": "true"}
+{"claim": "Clarion retrieves prior meeting context using ChromaDB vector search", "repo": "clarion", "label": "true"}
+{"claim": "Clarion exports generated meeting reports as markdown", "repo": "clarion", "label": "true"}
+{"claim": "Clarion supports live real-time meeting transcription", "repo": "clarion", "label": "stretched"}
+{"claim": "Clarion integrates directly with Zoom and Google Meet", "repo": "clarion", "label": "stretched"}
+{"claim": "Clarion's async pipeline processes hundreds of concurrent meetings", "repo": "clarion", "label": "stretched"}
+{"claim": "Clarion performs speaker diarization for multi-speaker meetings", "repo": "clarion", "label": "stretched"}
+{"claim": "Clarion uses AssemblyAI for meeting transcription", "repo": "clarion", "label": "fabricated"}
+{"claim": "Clarion has a React dashboard for meeting analytics", "repo": "clarion", "label": "fabricated"}
+{"claim": "Clarion stores transcripts in MongoDB", "repo": "clarion", "label": "fabricated"}
+{"claim": "Clarion fine-tunes a custom summarization model on meeting data", "repo": "clarion", "label": "fabricated"}
