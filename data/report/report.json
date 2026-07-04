@@ -259,7 +259,8 @@
         "contradiction": 0.0051,
         "excerpt": "From the README of repository e-commerce-fraud-detection:\n## 2. Repository Layout\n\n```text\n.\n|- src/\n|  |- pipeline/      # preprocessing, local prep, pseudo-label and transfer-set builders\n|  |- trai"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection achieved 245% F1 improvement over baseline (0.2105 to 0.7273)",
@@ -321,7 +322,8 @@
         "contradiction": 0.0043,
         "excerpt": "From the README of repository e-commerce-fraud-detection:\n### E) Full Training Workflow (Transfer Ablation)\n\nBuild mixed local+former datasets, then train using profile ablation paths.\n\n```bash\npython"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection migrated a globally trained model (Amazon) to Philippine e-commerce conditions (Shopee, Lazada)",
@@ -375,7 +377,8 @@
         "contradiction": 0.0015,
         "excerpt": "From the README of repository e-commerce-fraud-detection:\n## 3. System Pipeline\n\n1. Raw CSV ingestion and cleaning\n2. Modality-specific dataset creation\n3. Optional synthetic augmentation and pseudo-l"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection ensured evaluation integrity and prevent data leakage",
@@ -421,7 +424,8 @@
         "contradiction": 0.0087,
         "excerpt": "From the README of repository e-commerce-fraud-detection:\n### \u2699\ufe0f Processed Datasets\n- `data/processed/text_dataset.csv`\n- `data/processed/image_dataset.csv`\n- `data/processed/metadata_dataset.csv`\n- `"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "Cross-Platform Multimodal E-Commerce Fraud Detection addressed the gap left by single-modality detection systems",
@@ -523,7 +527,8 @@
         "contradiction": 0.0988,
         "excerpt": "From the README of repository driftwatch:\n## What it does\n\nDriftWatch tracks whether a deployed model is seeing data that looks different from what it learned during training.\n\nIn the loan risk scenar"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "DriftWatch ingests production snapshots, compares reference distributions, and detects drift via Kolmogorov\u2013Smirnov, PSI, and Jensen\u2013Shannon divergence",
@@ -561,7 +566,8 @@
         "contradiction": 0.0631,
         "excerpt": "From the README of repository driftwatch:\n## API Reference\n\n| Method | Path | Description |\n|---|---|---|\n| `GET` | `/health` | Liveness and version check |\n| `POST` | `/models` | Register a monitored"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "DriftWatch engineered a composite health score across a 15-route REST API with configurable thresholds and webhook alert delivery",
@@ -599,7 +605,8 @@
         "contradiction": 0.0045,
         "excerpt": "From the README of repository driftwatch:\n## Key Concepts\n\n- Reference distribution vs production snapshot:\n  Reference data is the baseline (usually training data statistics). Production snapshots ar"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "DriftWatch translated raw statistical drift signals into actionable operational data",
@@ -645,7 +652,8 @@
         "contradiction": 0.0019,
         "excerpt": "From the README of repository driftwatch:\n## Running Tests\n\n```bash\ndocker-compose run api pytest -v\n```"
       }
-    ]
+    ],
+    "method": "nli"
   },
   {
     "claim": "CommitMap built a full-stack analytics platform that ingests 1000+ GitHub commits",
