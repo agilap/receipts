@@ -1,0 +1,173 @@
+.main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 20px 96px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  margin: 8px 0 28px;
+  opacity: 0.75;
+}
+
+.paste {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid rgba(128, 128, 128, 0.45);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  resize: vertical;
+}
+
+.verify {
+  margin: 12px 0 32px;
+  padding: 10px 22px;
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.verify:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.error {
+  color: #dc2626;
+  margin-bottom: 24px;
+}
+
+.headline {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.group {
+  margin-bottom: 32px;
+}
+
+.group h2 {
+  font-size: 1.05rem;
+}
+
+.group small {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.blurb {
+  font-size: 0.85rem;
+  opacity: 0.65;
+  margin: 2px 0 10px;
+}
+
+.claims {
+  list-style: none;
+}
+
+.claim {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.claimRow {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.claimText {
+  flex: 1;
+}
+
+.chevron {
+  opacity: 0.5;
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.supported {
+  background: #16a34a;
+}
+
+.partial {
+  background: #d97706;
+}
+
+.unsupported {
+  background: #dc2626;
+}
+
+.no_evidence {
+  background: #6b7280;
+}
+
+.unverifiable {
+  background: #475569;
+}
+
+.note {
+  font-size: 0.82rem;
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+.evidence {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 8px;
+  border-left: 2px solid rgba(128, 128, 128, 0.3);
+}
+
+.evidence li {
+  margin-bottom: 10px;
+}
+
+.evidence a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.score {
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+.excerpt {
+  font-size: 0.8rem;
+  font-family: var(--font-geist-mono), monospace;
+  opacity: 0.7;
+  margin-top: 4px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
