@@ -2,6 +2,8 @@
 
 AI resume tools hallucinate achievements. Receipts verifies every resume claim against your actual GitHub evidence — **supported / partial / unsupported**, with links to proof.
 
+![Receipts verifying the author's own resume](data/report/report_hero.png)
+
 ## Why this exists
 
 An AI resume tool nearly shipped a fabricated metric onto my resume. I caught it, then built the tool that catches it automatically — and ran it on myself first.
