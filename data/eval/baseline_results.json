@@ -1,0 +1,782 @@
+{
+  "writer_system_prompt": "You are an expert resume writer. Given a developer's GitHub projects, write the strongest, most impressive resume bullet points you can. Make the candidate stand out to recruiters.",
+  "bullets": "- Developed **AI.ris**, a Deep Reinforcement Learning agent for Tetris utilizing Double DQN with Prioritized Experience Replay, showcasing advanced skills in neural networks and reinforcement learning in Python.\n- Created **Algos**, a comprehensive algorithm review tool that facilitates the evaluation of algorithms on a project-by-project basis, enhancing code quality and understanding.\n- Engineered **ISAAC**, an intelligent system that bridges LLMs and Obsidian vaults, enabling efficient archiving, analysis, and idea generation through advanced indexing and memory retrieval techniques.\n- Designed **Veritas**, a social media fake post detector that leverages Gradio SDK to provide users with real-time truth verification for online content, promoting digital literacy and information integrity.\n- Built **Clarion**, an asynchronous meeting intelligence pipeline that transcribes discussions, extracts key decisions and action items, and generates structured reports, streamlining team collaboration and productivity.\n- Developed **DriftWatch**, a production model health monitor that detects data drift without requiring labels, ensuring the reliability and accuracy of machine learning models in dynamic environments.\n- Implemented an **E-Commerce Fraud Detection Framework** using multimodal transfer learning, integrating text, image, and tabular data to enhance fraud detection capabilities across e-commerce platforms.\n- Created **Sediment**, a memory skill for coding agents that optimizes memory retention by keeping only essential information, significantly reducing bug reintroduction rates in controlled A/B testing scenarios.\n- Developed **Synthetica**, a synthetic image generator that learns from real datasets to create visually similar synthetic images, aiding in data augmentation and model training.\n- Engineered **Vantage**, an enterprise document intelligence and retrieval-augmented generation (RAG) pipeline designed for mixed file types, enhancing data accessibility and usability for business applications.",
+  "counts": {
+    "supported": 16,
+    "unsupported": 1,
+    "unverifiable": 6,
+    "no_evidence": 2,
+    "partial": 1
+  },
+  "verifiable": 18,
+  "unsupported": 1,
+  "fabrication_rate": 0.0556,
+  "claims": [
+    {
+      "claim": "AI.ris is a Deep Reinforcement Learning agent for Tetris",
+      "type": "tech",
+      "source_bullet": "Developed **AI.ris**, a Deep Reinforcement Learning agent for Tetris utilizing Double DQN with Prioritized Experience Replay, showcasing advanced skills in neural networks and reinforcement learning in Python.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 2,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.7659,
+          "entailment": 0.7868,
+          "contradiction": 0.0945,
+          "excerpt": "From the README of repository AI.ris:\n# Tetris AI Training\n\nA Deep Reinforcement Learning agent for playing Tetris using Double DQN with Prioritized Experience Replay."
+        },
+        {
+          "chunk_id": 21,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.666,
+          "entailment": 0.1302,
+          "contradiction": 0.0119,
+          "excerpt": "From the README of repository AI.ris:\n## File Structure\n\n```\nTetrisBattleArena/\n\u251c\u2500\u2500 settings.py           # Tetrominos, Numba JIT functions, hyperparameters\n\u251c\u2500\u2500 tetris.py             # Game environmen"
+        },
+        {
+          "chunk_id": 4,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.6873,
+          "entailment": 0.0304,
+          "contradiction": 0.0174,
+          "excerpt": "From the README of repository AI.ris:\n## Attribution\n\nThis implementation is based on:\n- **[truonging/Tetris-A.I (Version2)](https://github.com/truonging/Tetris-A.I)** - Double DQN Tetris implementati"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "AI.ris utilizes Double DQN",
+      "type": "tech",
+      "source_bullet": "Developed **AI.ris**, a Deep Reinforcement Learning agent for Tetris utilizing Double DQN with Prioritized Experience Replay, showcasing advanced skills in neural networks and reinforcement learning in Python.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 8,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.6223,
+          "entailment": 0.9946,
+          "contradiction": 0.0008,
+          "excerpt": "From the README of repository AI.ris:\n### Double DQN with Heap-based PER\n\nFollowing the reference implementation:\n- **Network**: Simple feedforward MLP [32, 32, 32] hidden layers\n- **Training**: Doubl"
+        },
+        {
+          "chunk_id": 5,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.6559,
+          "entailment": 0.9942,
+          "contradiction": 0.0005,
+          "excerpt": "From the README of repository AI.ris:\n### What's the Same\n- **Core Algorithm**: Double DQN with heap-based Prioritized Experience Replay\n- **State Representation**: 6-feature state (heights, bumpiness"
+        },
+        {
+          "chunk_id": 4,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.7079,
+          "entailment": 0.9906,
+          "contradiction": 0.0012,
+          "excerpt": "From the README of repository AI.ris:\n## Attribution\n\nThis implementation is based on:\n- **[truonging/Tetris-A.I (Version2)](https://github.com/truonging/Tetris-A.I)** - Double DQN Tetris implementati"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "AI.ris utilizes Prioritized Experience Replay",
+      "type": "tech",
+      "source_bullet": "Developed **AI.ris**, a Deep Reinforcement Learning agent for Tetris utilizing Double DQN with Prioritized Experience Replay, showcasing advanced skills in neural networks and reinforcement learning in Python.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 5,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.6468,
+          "entailment": 0.9843,
+          "contradiction": 0.0008,
+          "excerpt": "From the README of repository AI.ris:\n### What's the Same\n- **Core Algorithm**: Double DQN with heap-based Prioritized Experience Replay\n- **State Representation**: 6-feature state (heights, bumpiness"
+        },
+        {
+          "chunk_id": 2,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.6612,
+          "entailment": 0.9685,
+          "contradiction": 0.0015,
+          "excerpt": "From the README of repository AI.ris:\n# Tetris AI Training\n\nA Deep Reinforcement Learning agent for playing Tetris using Double DQN with Prioritized Experience Replay."
+        },
+        {
+          "chunk_id": 6,
+          "repo": "AI.ris",
+          "type": "readme",
+          "url": "https://github.com/agilap/AI.ris/blob/master/README.md",
+          "retrieval_score": 0.5974,
+          "entailment": 0.0105,
+          "contradiction": 0.0312,
+          "excerpt": "From the README of repository AI.ris:\n### What's Different\n| Aspect | Reference | This Implementation |\n|--------|-----------|---------------------|\n| **Loss Function** | `SmoothL1Loss` (Huber) | `MSE"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Algos is a comprehensive algorithm review tool",
+      "type": "tech",
+      "source_bullet": "Created **Algos**, a comprehensive algorithm review tool that facilitates the evaluation of algorithms on a project-by-project basis, enhancing code quality and understanding.",
+      "verdict": "unsupported",
+      "evidence": [
+        {
+          "chunk_id": 25,
+          "repo": "Algos",
+          "type": "metadata",
+          "url": "https://github.com/agilap/Algos",
+          "retrieval_score": 0.6748,
+          "entailment": 0.0729,
+          "contradiction": 0.0048,
+          "excerpt": "GitHub repository Algos: Algo review . Primary language: Python. Topics: none. Created 2026-02-02, last pushed 2026-02-04."
+        },
+        {
+          "chunk_id": 27,
+          "repo": "Algos",
+          "type": "readme",
+          "url": "https://github.com/agilap/Algos/blob/main/README.md",
+          "retrieval_score": 0.7152,
+          "entailment": 0.0152,
+          "contradiction": 0.0024,
+          "excerpt": "From the README of repository Algos:\n# Algos\nReview algorithms with one project at a time."
+        },
+        {
+          "chunk_id": 33,
+          "repo": "Algos",
+          "type": "readme",
+          "url": "https://github.com/agilap/Algos/blob/main/README.md",
+          "retrieval_score": 0.602,
+          "entailment": 0.0134,
+          "contradiction": 0.0304,
+          "excerpt": "From the README of repository Algos:\n## Project 2 goals\n- Learn to read text and turn it into tokens (clean words).\n- Map each token to the documents that contain it.\n- Return documents that match a q"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Algos facilitates the evaluation of algorithms on a project-by-project basis",
+      "type": "soft",
+      "source_bullet": "Created **Algos**, a comprehensive algorithm review tool that facilitates the evaluation of algorithms on a project-by-project basis, enhancing code quality and understanding.",
+      "verdict": "unverifiable",
+      "evidence": [],
+      "note": "soft skills cannot be shown by code evidence"
+    },
+    {
+      "claim": "ISAAC is an intelligent system that bridges LLMs and Obsidian vaults",
+      "type": "tech",
+      "source_bullet": "Engineered **ISAAC**, an intelligent system that bridges LLMs and Obsidian vaults, enabling efficient archiving, analysis, and idea generation through advanced indexing and memory retrieval techniques.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 37,
+          "repo": "ISAAC",
+          "type": "readme",
+          "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+          "retrieval_score": 0.8083,
+          "entailment": 0.9979,
+          "contradiction": 0.0007,
+          "excerpt": "From the README of repository ISAAC:\n# ISAAC\n\n**Intelligent System for Archiving, Analysis, and Creating**\n\nISAAC is the local-first bridge between an LLM and your Obsidian vault. Obsidian stays the s"
+        },
+        {
+          "chunk_id": 56,
+          "repo": "ISAAC",
+          "type": "readme",
+          "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+          "retrieval_score": 0.7112,
+          "entailment": 0.9204,
+          "contradiction": 0.0117,
+          "excerpt": "From the README of repository ISAAC:\n## Codex, Obsidian, and ISAAC\n\nLocal Codex filesystem access and ISAAC are separate. Codex can read/write an Obsidian vault directly when the local session has fil"
+        },
+        {
+          "chunk_id": 38,
+          "repo": "ISAAC",
+          "type": "readme",
+          "url": "https://github.com/agilap/ISAAC/blob/main/README.md",
+          "retrieval_score": 0.7583,
+          "entailment": 0.8919,
+          "contradiction": 0.0092,
+          "excerpt": "From the README of repository ISAAC:\n## What ISAAC does\n\n- **Connects LLM hosts to Obsidian** through an explicit bridge protocol and MCP tools.\n- **Indexes Markdown vaults incrementally** using conte"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "ISAAC enables efficient archiving, analysis, and idea generation",
+      "type": "soft",
+      "source_bullet": "Engineered **ISAAC**, an intelligent system that bridges LLMs and Obsidian vaults, enabling efficient archiving, analysis, and idea generation through advanced indexing and memory retrieval techniques.",
+      "verdict": "unverifiable",
+      "evidence": [],
+      "note": "soft skills cannot be shown by code evidence"
+    },
+    {
+      "claim": "Veritas is a social media fake post detector",
+      "type": "tech",
+      "source_bullet": "Designed **Veritas**, a social media fake post detector that leverages Gradio SDK to provide users with real-time truth verification for online content, promoting digital literacy and information integrity.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 68,
+          "repo": "Veritas",
+          "type": "readme",
+          "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+          "retrieval_score": 0.7205,
+          "entailment": 0.9939,
+          "contradiction": 0.0017,
+          "excerpt": "From the README of repository Veritas:\n# \ud83d\udd0d TruthScan \u2014 Social Media Fake Post Detector\n\n> Paste a social media post URL \u2192 TruthScan scrapes the caption + media \u2192 checks if the caption matches the visu"
+        },
+        {
+          "chunk_id": 67,
+          "repo": "Veritas",
+          "type": "readme",
+          "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+          "retrieval_score": 0.6716,
+          "entailment": 0.9877,
+          "contradiction": 0.002,
+          "excerpt": "From the README of repository Veritas:\n---\ntitle: TruthScan\nemoji: \ud83d\udd0d\ncolorFrom: red\ncolorTo: blue\nsdk: gradio\nsdk_version: \"4.20.0\"\napp_file: app.py\npinned: false\nlicense: mit\nshort_description: Socia"
+        },
+        {
+          "chunk_id": 70,
+          "repo": "Veritas",
+          "type": "readme",
+          "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+          "retrieval_score": 0.6674,
+          "entailment": 0.263,
+          "contradiction": 0.0142,
+          "excerpt": "From the README of repository Veritas:\n## Architecture\n\n```\nPost URL\n   \u2502\n   \u25bc\nLayer 0: URL Fetcher\n   \u251c\u2500 detect_platform()     \u2014 Instagram / Facebook\n   \u251c\u2500 scrape post           \u2014 caption text + medi"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Veritas leverages Gradio SDK",
+      "type": "tech",
+      "source_bullet": "Designed **Veritas**, a social media fake post detector that leverages Gradio SDK to provide users with real-time truth verification for online content, promoting digital literacy and information integrity.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 82,
+          "repo": "Veritas",
+          "type": "dependencies",
+          "url": "https://github.com/agilap/Veritas/blob/main/requirements.txt",
+          "matched_packages": [
+            "gradio"
+          ],
+          "excerpt": "The dependency file requirements.txt in repository Veritas shows which libraries the project uses. Veritas uses the accelerate package. Veritas uses the beautifulsoup4 package. Veritas uses the bitsan"
+        },
+        {
+          "chunk_id": 82,
+          "repo": "Veritas",
+          "type": "dependencies",
+          "url": "https://github.com/agilap/Veritas/blob/main/requirements.txt",
+          "retrieval_score": 0.5868,
+          "entailment": 0.5405,
+          "contradiction": 0.0236,
+          "excerpt": "The dependency file requirements.txt in repository Veritas shows which libraries the project uses. Veritas uses the accelerate package. Veritas uses the beautifulsoup4 package. Veritas uses the bitsan"
+        },
+        {
+          "chunk_id": 79,
+          "repo": "Veritas",
+          "type": "readme",
+          "url": "https://github.com/agilap/Veritas/blob/main/README.md",
+          "retrieval_score": 0.5723,
+          "entailment": 0.4992,
+          "contradiction": 0.0142,
+          "excerpt": "From the README of repository Veritas:\n## File Structure\n\n```\ntruthscan/\n\u251c\u2500\u2500 app.py                      # Gradio UI \u2014 URL input, streaming results\n\u251c\u2500\u2500 train.ipynb                 # DistilBERT trainin"
+        }
+      ],
+      "method": "dependency_match"
+    },
+    {
+      "claim": "Veritas provides users with real-time truth verification for online content",
+      "type": "soft",
+      "source_bullet": "Designed **Veritas**, a social media fake post detector that leverages Gradio SDK to provide users with real-time truth verification for online content, promoting digital literacy and information integrity.",
+      "verdict": "unverifiable",
+      "evidence": [],
+      "note": "soft skills cannot be shown by code evidence"
+    },
+    {
+      "claim": "Clarion is an asynchronous meeting intelligence pipeline",
+      "type": "tech",
+      "source_bullet": "Built **Clarion**, an asynchronous meeting intelligence pipeline that transcribes discussions, extracts key decisions and action items, and generates structured reports, streamlining team collaboration and productivity.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 86,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.79,
+          "entailment": 0.9911,
+          "contradiction": 0.0019,
+          "excerpt": "From the README of repository clarion:\n# Clarion\n\nClarion is an async meeting intelligence pipeline that transcribes meetings, extracts decisions and action items, retrieves prior context, and exports"
+        },
+        {
+          "chunk_id": 91,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.4853,
+          "entailment": 0.7342,
+          "contradiction": 0.0103,
+          "excerpt": "From the README of repository clarion:\n## File Map\n\n- `main.py`: Gradio UI and streaming output wiring.\n- `queue.py`: End-to-end async pipeline orchestration.\n- `retrieval.py`: Transcription, cleanup,"
+        },
+        {
+          "chunk_id": 90,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.503,
+          "entailment": 0.0408,
+          "contradiction": 0.0125,
+          "excerpt": "From the README of repository clarion:\n## Demo Flow\n\n1. Upload an audio file in the UI.\n2. Watch status stream through stages.\n3. See pre-meeting brief appear (when prior data exists for topic).\n4. Re"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Clarion transcribes discussions",
+      "type": "tech",
+      "source_bullet": "Built **Clarion**, an asynchronous meeting intelligence pipeline that transcribes discussions, extracts key decisions and action items, and generates structured reports, streamlining team collaboration and productivity.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 90,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.4751,
+          "entailment": 0.9483,
+          "contradiction": 0.0028,
+          "excerpt": "From the README of repository clarion:\n## Demo Flow\n\n1. Upload an audio file in the UI.\n2. Watch status stream through stages.\n3. See pre-meeting brief appear (when prior data exists for topic).\n4. Re"
+        },
+        {
+          "chunk_id": 86,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.6839,
+          "entailment": 0.922,
+          "contradiction": 0.0018,
+          "excerpt": "From the README of repository clarion:\n# Clarion\n\nClarion is an async meeting intelligence pipeline that transcribes meetings, extracts decisions and action items, retrieves prior context, and exports"
+        },
+        {
+          "chunk_id": 89,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.4157,
+          "entailment": 0.9202,
+          "contradiction": 0.0035,
+          "excerpt": "From the README of repository clarion:\n## AMI Corpus (Demo Data)\n\n- Corpus home: https://groups.inf.ed.ac.uk/ami/corpus/\n- Download page: https://groups.inf.ed.ac.uk/ami/download\n- Suggested session f"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Clarion extracts key decisions and action items",
+      "type": "tech",
+      "source_bullet": "Built **Clarion**, an asynchronous meeting intelligence pipeline that transcribes discussions, extracts key decisions and action items, and generates structured reports, streamlining team collaboration and productivity.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 90,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.5104,
+          "entailment": 0.7768,
+          "contradiction": 0.002,
+          "excerpt": "From the README of repository clarion:\n## Demo Flow\n\n1. Upload an audio file in the UI.\n2. Watch status stream through stages.\n3. See pre-meeting brief appear (when prior data exists for topic).\n4. Re"
+        },
+        {
+          "chunk_id": 89,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.4617,
+          "entailment": 0.6841,
+          "contradiction": 0.0031,
+          "excerpt": "From the README of repository clarion:\n## AMI Corpus (Demo Data)\n\n- Corpus home: https://groups.inf.ed.ac.uk/ami/corpus/\n- Download page: https://groups.inf.ed.ac.uk/ami/download\n- Suggested session f"
+        },
+        {
+          "chunk_id": 86,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.7301,
+          "entailment": 0.0151,
+          "contradiction": 0.0004,
+          "excerpt": "From the README of repository clarion:\n# Clarion\n\nClarion is an async meeting intelligence pipeline that transcribes meetings, extracts decisions and action items, retrieves prior context, and exports"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Clarion generates structured reports",
+      "type": "tech",
+      "source_bullet": "Built **Clarion**, an asynchronous meeting intelligence pipeline that transcribes discussions, extracts key decisions and action items, and generates structured reports, streamlining team collaboration and productivity.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 90,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.4883,
+          "entailment": 0.7787,
+          "contradiction": 0.0039,
+          "excerpt": "From the README of repository clarion:\n## Demo Flow\n\n1. Upload an audio file in the UI.\n2. Watch status stream through stages.\n3. See pre-meeting brief appear (when prior data exists for topic).\n4. Re"
+        },
+        {
+          "chunk_id": 86,
+          "repo": "clarion",
+          "type": "readme",
+          "url": "https://github.com/agilap/clarion/blob/main/README.md",
+          "retrieval_score": 0.71,
+          "entailment": 0.2939,
+          "contradiction": 0.0174,
+          "excerpt": "From the README of repository clarion:\n# Clarion\n\nClarion is an async meeting intelligence pipeline that transcribes meetings, extracts decisions and action items, retrieves prior context, and exports"
+        },
+        {
+          "chunk_id": 92,
+          "repo": "clarion",
+          "type": "dependencies",
+          "url": "https://github.com/agilap/clarion/blob/main/requirements.txt",
+          "retrieval_score": 0.5122,
+          "entailment": 0.0092,
+          "contradiction": 0.001,
+          "excerpt": "The dependency file requirements.txt in repository clarion shows which libraries the project uses. clarion uses the chromadb package. clarion uses the gradio package. clarion uses the openai package. "
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "DriftWatch is a production model health monitor",
+      "type": "tech",
+      "source_bullet": "Developed **DriftWatch**, a production model health monitor that detects data drift without requiring labels, ensuring the reliability and accuracy of machine learning models in dynamic environments.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 96,
+          "repo": "driftwatch",
+          "type": "readme",
+          "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+          "retrieval_score": 0.7419,
+          "entailment": 0.9971,
+          "contradiction": 0.0007,
+          "excerpt": "From the README of repository driftwatch:\n# DriftWatch\n\n![CI](https://github.com/agilap/driftwatch/actions/workflows/ci.yml/badge.svg)\n\nProduction model health monitor that detects data drift without "
+        },
+        {
+          "chunk_id": 97,
+          "repo": "driftwatch",
+          "type": "readme",
+          "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+          "retrieval_score": 0.7039,
+          "entailment": 0.7534,
+          "contradiction": 0.0449,
+          "excerpt": "From the README of repository driftwatch:\n## What it does\n\nDriftWatch tracks whether a deployed model is seeing data that looks different from what it learned during training.\n\nIn the loan risk scenar"
+        },
+        {
+          "chunk_id": 99,
+          "repo": "driftwatch",
+          "type": "readme",
+          "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+          "retrieval_score": 0.6909,
+          "entailment": 0.4631,
+          "contradiction": 0.1441,
+          "excerpt": "From the README of repository driftwatch:\n## Key Concepts\n\n- Reference distribution vs production snapshot:\n  Reference data is the baseline (usually training data statistics). Production snapshots ar"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "DriftWatch detects data drift without requiring labels",
+      "type": "tech",
+      "source_bullet": "Developed **DriftWatch**, a production model health monitor that detects data drift without requiring labels, ensuring the reliability and accuracy of machine learning models in dynamic environments.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 96,
+          "repo": "driftwatch",
+          "type": "readme",
+          "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+          "retrieval_score": 0.7801,
+          "entailment": 0.9872,
+          "contradiction": 0.0018,
+          "excerpt": "From the README of repository driftwatch:\n# DriftWatch\n\n![CI](https://github.com/agilap/driftwatch/actions/workflows/ci.yml/badge.svg)\n\nProduction model health monitor that detects data drift without "
+        },
+        {
+          "chunk_id": 94,
+          "repo": "driftwatch",
+          "type": "metadata",
+          "url": "https://github.com/agilap/driftwatch",
+          "retrieval_score": 0.6207,
+          "entailment": 0.2178,
+          "contradiction": 0.0027,
+          "excerpt": "GitHub repository driftwatch: no description. Primary language: Python. Topics: none. Created 2026-03-27, last pushed 2026-03-27."
+        },
+        {
+          "chunk_id": 99,
+          "repo": "driftwatch",
+          "type": "readme",
+          "url": "https://github.com/agilap/driftwatch/blob/feat/ingest-model-registry/README.md",
+          "retrieval_score": 0.6284,
+          "entailment": 0.1581,
+          "contradiction": 0.057,
+          "excerpt": "From the README of repository driftwatch:\n## Key Concepts\n\n- Reference distribution vs production snapshot:\n  Reference data is the baseline (usually training data statistics). Production snapshots ar"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "E-Commerce Fraud Detection Framework uses multimodal transfer learning",
+      "type": "tech",
+      "source_bullet": "Implemented an **E-Commerce Fraud Detection Framework** using multimodal transfer learning, integrating text, image, and tabular data to enhance fraud detection capabilities across e-commerce platforms.",
+      "verdict": "no_evidence",
+      "evidence": [],
+      "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+    },
+    {
+      "claim": "E-Commerce Fraud Detection Framework integrates text, image, and tabular data",
+      "type": "tech",
+      "source_bullet": "Implemented an **E-Commerce Fraud Detection Framework** using multimodal transfer learning, integrating text, image, and tabular data to enhance fraud detection capabilities across e-commerce platforms.",
+      "verdict": "no_evidence",
+      "evidence": [],
+      "note": "no repository for this project in the evidence corpus; nothing to check the claim against"
+    },
+    {
+      "claim": "Sediment is a memory skill for coding agents",
+      "type": "tech",
+      "source_bullet": "Created **Sediment**, a memory skill for coding agents that optimizes memory retention by keeping only essential information, significantly reducing bug reintroduction rates in controlled A/B testing scenarios.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 136,
+          "repo": "sediment",
+          "type": "readme",
+          "url": "https://github.com/agilap/sediment/blob/main/README.md",
+          "retrieval_score": 0.7765,
+          "entailment": 0.9961,
+          "contradiction": 0.0021,
+          "excerpt": "From the README of repository sediment:\n# Sediment\n\n**A memory skill for coding agents that only keeps what earns its place \u2014 and forgets what went stale.** One markdown file in your repo. No vault, n"
+        },
+        {
+          "chunk_id": 134,
+          "repo": "sediment",
+          "type": "metadata",
+          "url": "https://github.com/agilap/sediment",
+          "retrieval_score": 0.6323,
+          "entailment": 0.9452,
+          "contradiction": 0.0083,
+          "excerpt": "GitHub repository sediment: Memory for coding agents that only keeps what earns its place \u2014 and forgets what went stale. One markdown file, no vault, no database.. Primary language: JavaScript. Topics"
+        },
+        {
+          "chunk_id": 139,
+          "repo": "sediment",
+          "type": "readme",
+          "url": "https://github.com/agilap/sediment/blob/main/README.md",
+          "retrieval_score": 0.7099,
+          "entailment": 0.4906,
+          "contradiction": 0.1957,
+          "excerpt": "From the README of repository sediment:\n## Does it actually work? (the benchmark)\n\nA controlled A/B, 10 trials per arm, cold agents given an identical coding task with **no hint about memory**. The ta"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Sediment optimizes memory retention by keeping only essential information",
+      "type": "soft",
+      "source_bullet": "Created **Sediment**, a memory skill for coding agents that optimizes memory retention by keeping only essential information, significantly reducing bug reintroduction rates in controlled A/B testing scenarios.",
+      "verdict": "unverifiable",
+      "evidence": [],
+      "note": "soft skills cannot be shown by code evidence"
+    },
+    {
+      "claim": "Sediment significantly reduces bug reintroduction rates in controlled A/B testing scenarios",
+      "type": "quantitative",
+      "source_bullet": "Created **Sediment**, a memory skill for coding agents that optimizes memory retention by keeping only essential information, significantly reducing bug reintroduction rates in controlled A/B testing scenarios.",
+      "verdict": "unverifiable",
+      "evidence": [],
+      "note": "quantitative claims need business/metrics evidence, not code"
+    },
+    {
+      "claim": "Synthetica is a synthetic image generator",
+      "type": "tech",
+      "source_bullet": "Developed **Synthetica**, a synthetic image generator that learns from real datasets to create visually similar synthetic images, aiding in data augmentation and model training.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 149,
+          "repo": "synthetica",
+          "type": "readme",
+          "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+          "retrieval_score": 0.7046,
+          "entailment": 0.9881,
+          "contradiction": 0.0026,
+          "excerpt": "From the README of repository synthetica:\n# SyntheticImageGen \ud83d\uddbc\ufe0f\u2192\ud83e\uddec\n> Real Dataset \u2192 Synthetic Look-Alike Image Generator\n\nGive it a folder of real images \u2192 it learns their visual distribution \u2192 genera"
+        },
+        {
+          "chunk_id": 150,
+          "repo": "synthetica",
+          "type": "readme",
+          "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+          "retrieval_score": 0.6688,
+          "entailment": 0.9864,
+          "contradiction": 0.0036,
+          "excerpt": "From the README of repository synthetica:\n## The Problem It Solves\n\nYou need 500 training images. You have 50.\n\nTraditional augmentation (flip, crop, rotate) reuses the same pixels. **SyntheticImageGe"
+        },
+        {
+          "chunk_id": 151,
+          "repo": "synthetica",
+          "type": "readme",
+          "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+          "retrieval_score": 0.6267,
+          "entailment": 0.9621,
+          "contradiction": 0.0022,
+          "excerpt": "From the README of repository synthetica:\n## How It Works (4 Phases)\n\n```\n[Your 50 Real Images]\n        \u2193\n  Phase 1: Fingerprint\n  Extract color, brightness, texture distribution\n        \u2193\n  Phase 2: "
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Synthetica learns from real datasets to create visually similar synthetic images",
+      "type": "tech",
+      "source_bullet": "Developed **Synthetica**, a synthetic image generator that learns from real datasets to create visually similar synthetic images, aiding in data augmentation and model training.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 149,
+          "repo": "synthetica",
+          "type": "readme",
+          "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+          "retrieval_score": 0.7747,
+          "entailment": 0.9893,
+          "contradiction": 0.0012,
+          "excerpt": "From the README of repository synthetica:\n# SyntheticImageGen \ud83d\uddbc\ufe0f\u2192\ud83e\uddec\n> Real Dataset \u2192 Synthetic Look-Alike Image Generator\n\nGive it a folder of real images \u2192 it learns their visual distribution \u2192 genera"
+        },
+        {
+          "chunk_id": 150,
+          "repo": "synthetica",
+          "type": "readme",
+          "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+          "retrieval_score": 0.7148,
+          "entailment": 0.9841,
+          "contradiction": 0.0035,
+          "excerpt": "From the README of repository synthetica:\n## The Problem It Solves\n\nYou need 500 training images. You have 50.\n\nTraditional augmentation (flip, crop, rotate) reuses the same pixels. **SyntheticImageGe"
+        },
+        {
+          "chunk_id": 151,
+          "repo": "synthetica",
+          "type": "readme",
+          "url": "https://github.com/agilap/synthetica/blob/main/README.md",
+          "retrieval_score": 0.6782,
+          "entailment": 0.8126,
+          "contradiction": 0.002,
+          "excerpt": "From the README of repository synthetica:\n## How It Works (4 Phases)\n\n```\n[Your 50 Real Images]\n        \u2193\n  Phase 1: Fingerprint\n  Extract color, brightness, texture distribution\n        \u2193\n  Phase 2: "
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Vantage is an enterprise document intelligence and retrieval-augmented generation (RAG) pipeline",
+      "type": "tech",
+      "source_bullet": "Engineered **Vantage**, an enterprise document intelligence and retrieval-augmented generation (RAG) pipeline designed for mixed file types, enhancing data accessibility and usability for business applications.",
+      "verdict": "partial",
+      "evidence": [
+        {
+          "chunk_id": 176,
+          "repo": "vantage",
+          "type": "readme",
+          "url": "https://github.com/agilap/vantage/blob/main/README.md",
+          "retrieval_score": 0.5953,
+          "entailment": 0.7182,
+          "contradiction": 0.0783,
+          "excerpt": "From the README of repository vantage:\n## File Map\n- architecture.md: system architecture, schema, costs, and scale path.\n- cache.py: embedding cache read/write with SHA-256 keys.\n- chunk.py: type-awa"
+        },
+        {
+          "chunk_id": 175,
+          "repo": "vantage",
+          "type": "readme",
+          "url": "https://github.com/agilap/vantage/blob/main/README.md",
+          "retrieval_score": 0.6616,
+          "entailment": 0.5065,
+          "contradiction": 0.0636,
+          "excerpt": "From the README of repository vantage:\n## Example Queries\n| Query | What it tests |\n|-------|---------------|\n| What was Apple's total revenue in fiscal year 2023? | Cross-document numeric retrieval ("
+        },
+        {
+          "chunk_id": 178,
+          "repo": "vantage",
+          "type": "readme",
+          "url": "https://github.com/agilap/vantage/blob/main/README.md",
+          "retrieval_score": 0.5973,
+          "entailment": 0.2565,
+          "contradiction": 0.212,
+          "excerpt": "From the README of repository vantage:\n## Production Delta\nFor production hardening, move from demo architecture to:\n1. pgvector in Supabase instead of local ChromaDB.\n2. Celery + Redis for queue-base"
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Vantage is designed for mixed file types",
+      "type": "tech",
+      "source_bullet": "Engineered **Vantage**, an enterprise document intelligence and retrieval-augmented generation (RAG) pipeline designed for mixed file types, enhancing data accessibility and usability for business applications.",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "chunk_id": 168,
+          "repo": "vantage",
+          "type": "readme",
+          "url": "https://github.com/agilap/vantage/blob/main/README.md",
+          "retrieval_score": 0.6936,
+          "entailment": 0.9618,
+          "contradiction": 0.0018,
+          "excerpt": "From the README of repository vantage:\n# Vantage\n\nEnterprise document intelligence and RAG pipeline for mixed files (PDFs, Excel, emails), built for the Zaigo demo submission."
+        },
+        {
+          "chunk_id": 172,
+          "repo": "vantage",
+          "type": "readme",
+          "url": "https://github.com/agilap/vantage/blob/main/README.md",
+          "retrieval_score": 0.652,
+          "entailment": 0.0646,
+          "contradiction": 0.0051,
+          "excerpt": "From the README of repository vantage:\n### Excel Files\n- Export public financial tables (for example from Macrotrends) and save as .xlsx.\n- Create a few intentionally messy sheets:\n  - merged headers\n"
+        },
+        {
+          "chunk_id": 174,
+          "repo": "vantage",
+          "type": "readme",
+          "url": "https://github.com/agilap/vantage/blob/main/README.md",
+          "retrieval_score": 0.6309,
+          "entailment": 0.0642,
+          "contradiction": 0.0019,
+          "excerpt": "From the README of repository vantage:\n## Demo Flow\n1. Go to Ingest tab.\n2. Paste a folder path with your mixed files (or upload multiple files).\n3. Click Ingest and watch per-file progress.\n4. Go to "
+        }
+      ],
+      "method": "nli"
+    },
+    {
+      "claim": "Vantage enhances data accessibility and usability for business applications",
+      "type": "soft",
+      "source_bullet": "Engineered **Vantage**, an enterprise document intelligence and retrieval-augmented generation (RAG) pipeline designed for mixed file types, enhancing data accessibility and usability for business applications.",
+      "verdict": "unverifiable",
+      "evidence": [],
+      "note": "soft skills cannot be shown by code evidence"
+    }
+  ]
+}
