@@ -71,7 +71,3 @@ Paste your resume at `localhost:3000`. Evidence fetching is an offline step: `py
 ## Roadmap (deliberately not built yet)
 
 Grounded bullet generation, AST-level skill detection, multi-user/auth, LinkedIn and other evidence sources, gap-analysis coaching, README-vs-code evidence weighting.
-
----
-
-*Disclosure, in the spirit of the project: this README's prose was drafted by an AI assistant at the author's request, then every number in it was verified against the committed eval data — see [`data/eval/results.json`](data/eval/results.json) and [`data/eval/baseline_results.json`](data/eval/baseline_results.json).*
